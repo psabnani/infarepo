@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "311yIq7k6pTjwkhzQaI06Y",
+    "name" : "Emailattachment_CMDtsk_repro_TF",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "xjISUXL86zqzm5Y-gt-91538425-2023-05-09T22:32:55.376Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-09-11T18:45:40.666Z",
+  "objectRefs" : [ {
+    "id" : "3xPv7F2PT2LbDJQgl1SWWC",
+    "name" : "PS_Linux",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W425000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}
