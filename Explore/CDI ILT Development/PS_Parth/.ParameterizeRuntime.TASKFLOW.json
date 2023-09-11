@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "7rXtMJ1wFaWf0PphjD8UMM",
+    "name" : "ParameterizeRuntime",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "jxqdwMbgbdoPVm5-gt-30239404-2022-07-20T22:21:52.154Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-09-11T18:46:56.679Z",
+  "objectRefs" : [ ]
+}

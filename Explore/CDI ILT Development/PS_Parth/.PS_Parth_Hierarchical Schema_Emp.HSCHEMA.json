@@ -1,0 +1,28 @@
+{
+  "objectInfo" : {
+    "id" : "7uUuhuO8x4Xf4ijkSnY0MD",
+    "name" : "PS_Parth_Hierarchical Schema_Emp",
+    "type" : "HSCHEMA",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W436000000000002"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2023-09-11T18:46:56.670Z",
+  "objectRefs" : [ ]
+}

@@ -1,0 +1,48 @@
+{
+  "objectInfo" : {
+    "id" : "8pmfvYp2arJeLjBLcflQud",
+    "name" : "Datatasks",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "xWCQaaaaaa-gt-12403871-2022-07-14T20:45:00.438Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-09-11T18:46:56.691Z",
+  "objectRefs" : [ {
+    "id" : "3dcSBzrRDA9l7xrgyHmmO4",
+    "name" : "PS_InOutParameterMappingTask",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W40Z000000000005"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/CDI ILT Development/PS_Parth"
+  } ]
+}

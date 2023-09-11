@@ -1,0 +1,51 @@
+{
+  "objectInfo" : {
+    "id" : "3V5OkaPrpvBdrIKqvWgkmy",
+    "name" : "PS_Parth_BusinessService_NumberConversion",
+    "type" : "BSERVICE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W427000000000002"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      }, {
+        "name" : "01C3W428000000000002",
+        "value" : "3V5OkaPrpvBdrIKqvWgkmy@NumberToDollars"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2023-09-11T18:46:56.673Z",
+  "objectRefs" : [ {
+    "id" : "5SjsgSltUqegsmOjWQtoix",
+    "name" : "PS_Parth_WSConsumer",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W40B000000000003"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}

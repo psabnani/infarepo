@@ -1,0 +1,68 @@
+{
+  "objectInfo" : {
+    "id" : "3pbwi43ySQKlVq5I5nFWOT",
+    "name" : "Dynamic Mapping Task1",
+    "type" : "BATCH_MAPPING",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "ffeKVhyGjU8fNkPGhdf8G1"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "test",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2023-09-11T18:46:56.679Z",
+  "objectRefs" : [ {
+    "id" : "31btna6Msw2dAeYrfKyIGx",
+    "name" : "PS_Parth_InOutParameter",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W417000000000008"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/CDI ILT Development/PS_Parth"
+  }, {
+    "id" : "0VaCGLxijEPbFdYB9Ld5gb",
+    "name" : "PS_Windows",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W425000000000004"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}

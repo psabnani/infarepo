@@ -1,0 +1,136 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>jxqdwMbgbdoPVm5-gt-30239404-2022-07-20T22:21:52.154Z::tf.xml</types1:EntryId>
+      <types1:Name>ParameterizeRuntime</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>psabnani</types1:CreatedBy>
+      <types1:CreationDate>2022-07-20T22:21:52Z</types1:CreationDate>
+      <types1:ModifiedBy>psabnani</types1:ModifiedBy>
+      <types1:ModificationDate>2022-07-22T18:42:06Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>psabnani</types1:PublishedBy>
+      <types1:PublicationDate>2022-07-22T18:42:18Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.ParameterizeRuntime/ParameterizeRuntime.tf.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="ParameterizeRuntime"
+                   name="ParameterizeRuntime"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="Envname" required="true" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <tempFields>
+               <field description="" name="Command Task 1" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:INFA-commandTask</option>
+                     <option name="failOnNotRun">true</option>
+                     <option name="failOnFault">true</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="l5wrv2qv" targetId="l5wrv2qu"/>
+               </start>
+               <assignment id="l5wrv2qu">
+                  <title>Assignment 1</title>
+                  <operation source="constant" to="input.Envname">parthvm</operation>
+                  <link id="l5wrv2qw" targetId="l5u5ve80"/>
+               </assignment>
+               <eventContainer id="l5u5ve80">
+                  <service id="l5u5ve7e">
+                     <title>Command Task 1</title>
+                     <serviceName>ICSExecuteCommandTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Task Name" source="constant">Command Task 1</parameter>
+                        <parameter name="Wait for Task to Complete" source="constant">true</parameter>
+                        <parameter name="Runtime Environment" source="formula">
+                           <expression language="XQuery">string($input.Envname) </expression>
+                        </parameter>
+                        <parameter name="Script Name" source="constant">C:\Users\Administrator\Desktop\echohello.bat</parameter>
+                        <parameter name="Input Arguments" source="constant"/>
+                        <parameter name="Work Directory" source="constant"/>
+                        <parameter name="RuntimeEnvGUID" source="constant"/>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Command Task 1/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.Command Task 1/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Exit_Code">Exit Code</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Execution_Status">Execution Status</operation>
+                        <operation source="field" to="temp.Command Task 1/output/Std_Error">Std Error</operation>
+                     </serviceOutput>
+                  </service>
+                  <flow id="l5u5ve8l">
+                     <link id="l5u5ve8m" targetId="l5u5ve80" type="containerLink"/>
+                  </flow>
+                  <flow id="l5u5ve8o">
+                     <link id="l5u5ve8p" targetId="l5u5ve80" type="containerLink"/>
+                  </flow>
+                  <link id="l5u5ve8k" targetId="l5u5ve8l" type="containerLink"/>
+                  <link id="l5u5ve7g" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.Command Task 1/fault"
+                            id="l5u5ve7z"
+                            interrupting="true"
+                            name="error">
+                        <link id="l5u5ve8n" targetId="l5u5ve8o" type="containerLink"/>
+                     </catch>
+                  </events>
+               </eventContainer>
+               <end id="c">
+                  <title>abc</title>
+               </end>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="INFA-commandTask"
+                              isByCopy="true"
+                              name="INFA-commandTask">
+                  <description>This process object represents a taskflow specific command task output field details.</description>
+                  <tags/>
+                  <detail>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>7rXtMJ1wFaWf0PphjD8UMM</types1:GUID>
+      <types1:DisplayName>ParameterizeRuntime</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-09-11T18:46:46.508Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

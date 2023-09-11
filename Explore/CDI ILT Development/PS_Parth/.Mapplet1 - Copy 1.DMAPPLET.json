@@ -1,0 +1,28 @@
+{
+  "objectInfo" : {
+    "id" : "7zLpWDH0lAVhsEVJDdB3EP",
+    "name" : "Mapplet1 - Copy 1",
+    "type" : "DMAPPLET",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W440000000000004"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : null,
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2023-09-11T18:46:56.672Z",
+  "objectRefs" : [ ]
+}

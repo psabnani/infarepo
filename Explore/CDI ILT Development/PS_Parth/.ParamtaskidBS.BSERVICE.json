@@ -1,0 +1,51 @@
+{
+  "objectInfo" : {
+    "id" : "flWuTk2DLSMc0AEofn2nUT",
+    "name" : "ParamtaskidBS",
+    "type" : "BSERVICE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W42700000000000D"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      }, {
+        "name" : "01C3W42800000000000H",
+        "value" : "flWuTk2DLSMc0AEofn2nUT@ParameterizetaskidAPI"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2023-09-11T18:46:56.683Z",
+  "objectRefs" : [ {
+    "id" : "aIkTJLrrmKIgC6TMVPvEw4",
+    "name" : "Parameterizetaskidapi",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W40B000000000013"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "cc",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}

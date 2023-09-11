@@ -23,9 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
+  "updateTime" : "2023-09-11T18:46:56.682Z",
   "objectRefs" : [ {
     "id" : "9USXwyHkQlGgRlk1CpCrA2",
-    "name" : "PS_Parth_Oracle",
+    "name" : "PS_Parth_Oracle_local",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
