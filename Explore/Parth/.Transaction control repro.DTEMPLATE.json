@@ -16,15 +16,35 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "hello",
         "contentType" : "JSON",
         "documentState" : "INVALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-18T21:37:34.872Z",
+  "updateTime" : "2024-02-12T21:50:06.617Z",
   "objectRefs" : [ {
+    "id" : "4MeqUvLY3Kal820pdS6iIA",
+    "name" : "ParthVM_FlatFile",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01C3W40B00000000001L"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
     "id" : "9CJ0fmUdUbPjt0f3n2KN6E",
     "name" : "Flat file LinuxVM",
     "type" : "Connection",

@@ -20,7 +20,7 @@
     }
   },
   "dataFileExtension" : "xml",
-  "updateTime" : "2023-09-18T21:37:34.870Z",
+  "updateTime" : "2024-02-12T21:50:06.618Z",
   "objectRefs" : [ {
     "id" : "fniQjBwYUOCdUsimN3Ywoh",
     "name" : "Shivam_reprooracleprecision",
@@ -43,7 +43,7 @@
     "path" : "/Explore/CDI ILT Development/PS_Parth"
   }, {
     "id" : "9ZQm7G2ZvWvbh3zMXRgLsk",
-    "name" : "parthvm",
+    "name" : "PS_WindowsVM",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
