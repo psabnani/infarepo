@@ -72,7 +72,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: tjohnsoninformatica/IICS-CDP-CICD-demo
+          repository: IamVivek7/vivek10
           ref: UAT
           token: ${{ secrets.GH_TOKEN }}
           path: IICS-CDP-CICD-demo
