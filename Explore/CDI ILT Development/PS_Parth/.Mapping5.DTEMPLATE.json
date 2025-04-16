@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.688Z",
+  "updateTime" : "2025-04-16T18:21:01.963Z",
   "objectRefs" : [ {
     "id" : "116vez42SY8frasbRWb5s9",
     "name" : "PS_Parth_Oracle12c_Infa",
@@ -64,5 +64,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

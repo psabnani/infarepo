@@ -1,0 +1,91 @@
+{
+  "name" : "PS_Parth_DataTransfertask",
+  "state" : "VALID",
+  "runtimeEnvironmentId" : "01C3W425000000000005",
+  "runtimeEnvironmentName" : "CDI_PS_Parth",
+  "properties" : [
+    {
+      "name" : "Source",
+      "type" : "SOURCE",
+      "connectionId" : "01C3W40B000000000002",
+      "connectionName" : "PS_Parth_Oracle_local",
+      "object" : {
+        "name" : "CUSTOMER",
+        "metadataUpdated" : false,
+        "filters" : [
+          {
+            "objectName" : "CUSTOMER",
+            "field" : "TIER",
+            "operator" : "notEquals",
+            "value" : "0"
+          }
+        ],
+        "sortFields" : [
+          {
+            "objectName" : "CUSTOMER",
+            "fieldName" : "CUST_ID",
+            "sortDescending" : false
+          },
+          {
+            "objectName" : "CUSTOMER",
+            "fieldName" : "NAME",
+            "sortDescending" : false
+          }
+        ]
+      }
+    },
+    {
+      "name" : "Target",
+      "type" : "TARGET",
+      "connectionId" : "01C3W40B000000000006",
+      "connectionName" : "flatfiledemo",
+      "ffAttrs" : {
+        "delimiter" : ",",
+        "textQualifier" : "\"",
+        "headerLineNo" : 1,
+        "firstDataRow" : 2
+      },
+      "targetObject" : "Customer_Name.csv",
+      "newObject" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "handleSpecialChars" : false
+    },
+    {
+      "name" : "$p_filter_src$",
+      "type" : "FILTER",
+      "text" : "TRUE",
+      "advancedFilterExpression" : false
+    },
+    {
+      "name" : "$p_field_map$",
+      "type" : "FIELD_MAPPING"
+    },
+    {
+      "name" : "$p_exp_fields$",
+      "type" : "EXPRESSION"
+    },
+    {
+      "name" : "Lookup",
+      "type" : "LOOKUP",
+      "connectionId" : "01C3W40B000000000006",
+      "connectionName" : "flatfiledemo",
+      "ffAttrs" : {
+        "delimiter" : ",",
+        "textQualifier" : "\"",
+        "headerLineNo" : 1,
+        "firstDataRow" : 2
+      },
+      "lookupObject" : "Order_Status.csv",
+      "lookupCondition" : "CUST_ID = SRC_CUST_ID"
+    },
+    {
+      "name" : "$p_filter_lkp$",
+      "type" : "FILTER",
+      "text" : "TRUE",
+      "advancedFilterExpression" : false
+    }
+  ],
+  "vcsExportTime" : "2025-04-16 14:20:51 EDT"
+}

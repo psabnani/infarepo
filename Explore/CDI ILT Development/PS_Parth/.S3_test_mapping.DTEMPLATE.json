@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.689Z",
+  "updateTime" : "2025-04-16T18:21:01.964Z",
   "objectRefs" : [ {
     "id" : "8oA9n1UhELKeRCxcTXQDSS",
     "name" : "PS_AWS_S3",
@@ -64,5 +64,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

@@ -1,0 +1,193 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "documentType" : "DMAPPLET",
+    "name" : "PS_Parth_Mapplet",
+    "links" : [
+      {
+        "link" : "Input -> Expression"
+      },
+      {
+        "link" : "Filter -> Output"
+      },
+      {
+        "link" : "Expression -> Filter"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-03-30T22:36:36.950Z",
+        "name" : "Input",
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "fields" : [
+          {
+            "name" : "Price",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "name" : "Quantity",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "name" : "Product_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "name" : "Product_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ]
+      },
+      {
+        "createTime" : "2022-03-30T22:36:36.976Z",
+        "name" : "Output",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "fieldMappingMode" : "MANUAL",
+        "fields" : [
+          {
+            "name" : "Product_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "name" : "Product_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "name" : "Cost",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Total",
+              "toField" : {
+                "name" : "Cost"
+              }
+            },
+            {
+              "fromFieldName" : "Product_ID",
+              "toField" : {
+                "name" : "Product_ID"
+              }
+            },
+            {
+              "fromFieldName" : "Product_Name",
+              "toField" : {
+                "name" : "Product_Name"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2022-03-30T22:39:40.266Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "name" : "Total",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "Price*Quantity"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "createTime" : "2022-03-30T22:42:25.974Z",
+        "name" : "Filter",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "filterConditions" : [
+          {
+            "fieldName" : "Product_ID",
+            "filterValue" : "IN7040",
+            "operator" : "<"
+          }
+        ]
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:54 EDT"
+}

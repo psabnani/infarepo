@@ -1,0 +1,384 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "FFtoSnowflake_Upsert",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-06-15T21:25:38.713Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "C1"
+            },
+            "name" : "C1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "C2"
+            },
+            "name" : "C2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "C3"
+            },
+            "name" : "C3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "testprac.csv",
+            "label" : "testprac.csv",
+            "objectName" : "testprac.csv",
+            "path" : "testprac.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "C1",
+                "fieldType" : "CONNECTOR",
+                "label" : "C1",
+                "nativeName" : "C1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "testprac.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "C2",
+                "fieldType" : "CONNECTOR",
+                "label" : "C2",
+                "nativeName" : "C2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "testprac.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "C3",
+                "fieldType" : "CONNECTOR",
+                "label" : "C3",
+                "nativeName" : "C3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "testprac.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-06-15T21:25:38.715Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : [
+          "C1"
+        ],
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "C1"
+            },
+            "name" : "C1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16777216,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "C2"
+            },
+            "name" : "C2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16777216,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "C3"
+            },
+            "name" : "C3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16777216,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@8GQehdBoBFxcQWZNpl7B6m",
+          "connectionName" : "SnowflakeDataCloud",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "GCS/GCS_SCHEMA/TEST_PS1",
+            "label" : "TEST_PS1",
+            "objectName" : "TEST_PS1",
+            "objectType" : "table",
+            "path" : "GCS/GCS_SCHEMA/TEST_PS1",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "C1",
+                "fieldType" : "CONNECTOR",
+                "label" : "C1",
+                "nativeName" : "C1",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16777216,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TEST_PS1"
+                  }
+                ]
+              },
+              {
+                "name" : "C2",
+                "fieldType" : "CONNECTOR",
+                "label" : "C2",
+                "nativeName" : "C2",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16777216,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TEST_PS1"
+                  }
+                ]
+              },
+              {
+                "name" : "C3",
+                "fieldType" : "CONNECTOR",
+                "label" : "C3",
+                "nativeName" : "C3",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16777216,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TEST_PS1"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "tableType",
+                "value" : "TABLE"
+              }
+            ]
+          },
+          "runtimeAttributes" : {
+            "attributes" : [
+              {
+                "name" : "UpdateMode",
+                "value" : "Update Else Insert"
+              },
+              {
+                "name" : "Truncate Target Table",
+                "value" : "NO"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 10,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Delete"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "C1",
+              "toField" : {
+                "name" : "C1"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "C2",
+              "toField" : {
+                "name" : "C2"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "C3",
+              "toField" : {
+                "name" : "C3"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:55 EDT"
+}

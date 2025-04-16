@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.690Z",
+  "updateTime" : "2025-04-16T18:21:01.965Z",
   "objectRefs" : [ {
     "id" : "8Z85QHCud6LfE08HvvuDAk",
     "name" : "PS_AWS_S3_Linux",
@@ -44,5 +44,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

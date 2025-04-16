@@ -1,0 +1,44 @@
+{
+  "name" : "Dynamic Mapping Task1",
+  "description" : "test",
+  "state" : "VALID",
+  "mappingId" : "01C3W417000000000008",
+  "mappingTemplateName" : "PS_Parth_InOutParameter",
+  "mappingDocType" : "MAPPING",
+  "runtimeEnvironmentId" : "01C3W425000000000004",
+  "runtimeEnvironmentName" : "PS_Windows",
+  "params" : [
+    {
+      "uniqueName" : "p_orderid",
+      "name" : "p_orderid",
+      "type" : "INOUT_INT",
+      "scope" : "LOCAL"
+    }
+  ],
+  "groups" : [
+    {
+      "groupName" : "Group_1",
+      "enabled" : true
+    }
+  ],
+  "jobs" : [
+    {
+      "jobName" : "Job_1",
+      "jobType" : "USER",
+      "enabled" : true,
+      "stopOnError" : false,
+      "stopOnWarning" : false,
+      "jobParamBindings" : [
+        {
+          "type" : "INOUT",
+          "paramDefn" : "p_orderid",
+          "retentionPolicy" : "ON_SUCCESS_OR_WARNING",
+          "aggregationType" : "MAX",
+          "currentValue" : "7"
+        }
+      ],
+      "group" : "Group_1"
+    }
+  ],
+  "vcsExportTime" : "2025-04-16 14:20:57 EDT"
+}

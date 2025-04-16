@@ -1,0 +1,461 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "PS_Parth_InOutParameter",
+    "links" : [
+      {
+        "link" : "Expression -> Target"
+      },
+      {
+        "link" : "Source -> Expression"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-03-31T20:55:49.722Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ORDERID"
+            },
+            "name" : "ORDERID",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "QUANTITY"
+            },
+            "name" : "QUANTITY",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CUSTOMERID"
+            },
+            "name" : "CUSTOMERID",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SHIPMENTTRACKINGNO"
+            },
+            "name" : "SHIPMENTTRACKINGNO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ORDERSTATUS"
+            },
+            "name" : "ORDERSTATUS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCTDESCRIPTION"
+            },
+            "name" : "PRODUCTDESCRIPTION",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 60,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "OUTLETID"
+            },
+            "name" : "OUTLETID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCTID"
+            },
+            "name" : "PRODUCTID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9USXwyHkQlGgRlk1CpCrA2",
+          "connectionName" : "PS_Parth_Oracle_local",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 100000,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "ORDERS",
+            "label" : "ORDERS",
+            "objectName" : "ORDERS",
+            "path" : "ORDERS",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ORDERID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ORDERID",
+                "nativeName" : "ORDERID",
+                "nativeType" : "double",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "QUANTITY",
+                "fieldType" : "CONNECTOR",
+                "label" : "QUANTITY",
+                "nativeName" : "QUANTITY",
+                "nativeType" : "double",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "CUSTOMERID",
+                "fieldType" : "CONNECTOR",
+                "label" : "CUSTOMERID",
+                "nativeName" : "CUSTOMERID",
+                "nativeType" : "double",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "SHIPMENTTRACKINGNO",
+                "fieldType" : "CONNECTOR",
+                "label" : "SHIPMENTTRACKINGNO",
+                "nativeName" : "SHIPMENTTRACKINGNO",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "ORDERSTATUS",
+                "fieldType" : "CONNECTOR",
+                "label" : "ORDERSTATUS",
+                "nativeName" : "ORDERSTATUS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCTDESCRIPTION",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCTDESCRIPTION",
+                "nativeName" : "PRODUCTDESCRIPTION",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 60,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "OUTLETID",
+                "fieldType" : "CONNECTOR",
+                "label" : "OUTLETID",
+                "nativeName" : "OUTLETID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCTID",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCTID",
+                "nativeName" : "PRODUCTID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ORDERS"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false",
+            "filterConditions" : [
+              {
+                "fieldName" : "ORDERID",
+                "filterValue" : "$$p_orderid",
+                "objectName" : "ORDERS",
+                "operator" : "GREATER_THAN"
+              }
+            ],
+            "sortFields" : [
+              {
+                "fieldName" : "ORDERID",
+                "objectName" : "ORDERS"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "createTime" : "2022-03-31T20:55:49.728Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "InOutParameter.csv",
+            "label" : "InOutParameter.csv",
+            "path" : "InOutParameter.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-03-31T21:14:58.210Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "name" : "P_ORDERID",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "SetMaxVariable($$p_orderid,ORDERID)"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      }
+    ],
+    "variables" : [
+      {
+        "aggregationType" : "MAX",
+        "expressionVariable" : "false",
+        "name" : "p_orderid",
+        "platformType" : {
+          "name" : "integer"
+        },
+        "precision" : 10,
+        "retentionPolicy" : "ON_SUCCESS_OR_WARNING",
+        "scale" : 0
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:57 EDT"
+}

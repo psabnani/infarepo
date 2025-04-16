@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.671Z",
+  "updateTime" : "2025-04-16T18:21:01.939Z",
   "objectRefs" : [ {
     "id" : "0ZhEd12vbyIgs4FKSEYh27",
     "name" : "S3_repro_shivam",
@@ -87,5 +87,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

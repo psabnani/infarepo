@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.686Z",
+  "updateTime" : "2025-04-16T18:21:01.959Z",
   "objectRefs" : [ {
     "id" : "g5ulcbEg2A4hNtrCBYsuy5",
     "name" : "R360_2",
@@ -133,5 +133,7 @@
       }
     },
     "path" : "/Explore/CDI ILT Development/PS_Parth"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

@@ -1,0 +1,701 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "MyPracticeofUnconnectedLookupmapping",
+    "links" : [
+      {
+        "link" : "Expression -> Target"
+      },
+      {
+        "link" : "Source_Lkp -> Expression"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-03-30T21:39:30.568Z",
+        "name" : "Source_Lkp",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "FullName"
+            },
+            "name" : "FullName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SecurityType"
+            },
+            "name" : "SecurityType",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Ticker"
+            },
+            "name" : "Ticker",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NoOfUnits"
+            },
+            "name" : "NoOfUnits",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "InvestmentOption.txt",
+            "label" : "InvestmentOption.txt",
+            "objectName" : "InvestmentOption.txt",
+            "path" : "InvestmentOption.txt",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "FullName",
+                "fieldType" : "CONNECTOR",
+                "label" : "FullName",
+                "nativeName" : "FullName",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "InvestmentOption.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "SecurityType",
+                "fieldType" : "CONNECTOR",
+                "label" : "SecurityType",
+                "nativeName" : "SecurityType",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "InvestmentOption.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "Ticker",
+                "fieldType" : "CONNECTOR",
+                "label" : "Ticker",
+                "nativeName" : "Ticker",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "InvestmentOption.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "NoOfUnits",
+                "fieldType" : "CONNECTOR",
+                "label" : "NoOfUnits",
+                "nativeName" : "NoOfUnits",
+                "nativeType" : "int",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "InvestmentOption.txt"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-03-30T21:39:30.581Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "FULLNAME"
+            },
+            "name" : "FULLNAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ACCOUNTVALUE"
+            },
+            "name" : "ACCOUNTVALUE",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9USXwyHkQlGgRlk1CpCrA2",
+          "connectionName" : "PS_Parth_Oracle_local",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "TOTALAMOUNT",
+            "label" : "TOTALAMOUNT",
+            "objectName" : "TOTALAMOUNT",
+            "path" : "TOTALAMOUNT",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "FULLNAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FULLNAME",
+                "nativeName" : "FULLNAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TOTALAMOUNT"
+                  }
+                ]
+              },
+              {
+                "name" : "ACCOUNTVALUE",
+                "fieldType" : "CONNECTOR",
+                "label" : "ACCOUNTVALUE",
+                "nativeName" : "ACCOUNTVALUE",
+                "nativeType" : "double",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TOTALAMOUNT"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "TotalValue",
+              "toField" : {
+                "name" : "ACCOUNTVALUE"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "FullName",
+              "toField" : {
+                "name" : "FULLNAME"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2022-03-30T21:40:23.858Z",
+        "name" : "Lookup_Stockticker",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Lookup cache directory name",
+            "value" : "$PMCacheDir"
+          },
+          {
+            "name" : "Lookup cache persistent",
+            "value" : "false"
+          },
+          {
+            "name" : "Re-cache from lookup source",
+            "value" : "false"
+          },
+          {
+            "name" : "Lookup Data Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Lookup Index Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          },
+          {
+            "name" : "Case Sensitive String Comparison",
+            "value" : "false"
+          },
+          {
+            "name" : "Sorted Input",
+            "value" : "false"
+          },
+          {
+            "name" : "Lookup source is static",
+            "value" : "false"
+          },
+          {
+            "name" : "Pre-build lookup cache",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Optional",
+            "value" : "true"
+          }
+        ],
+        "multipleMatchPolicy" : "Use Any Value",
+        "returnPortName" : "PrevClose",
+        "unconnected" : "true",
+        "useLabels" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Ticker"
+            },
+            "name" : "Ticker",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PrevClose"
+            },
+            "name" : "PrevClose",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "inputPortNames" : [
+          "I_Ticker"
+        ],
+        "lookupConditions" : [
+          {
+            "leftOperand" : "Ticker",
+            "operator" : "=",
+            "rightOperand" : "I_Ticker"
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "StockTicker.txt",
+            "label" : "StockTicker.txt",
+            "objectName" : "StockTicker.txt",
+            "path" : "StockTicker.txt",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Ticker",
+                "fieldType" : "CONNECTOR",
+                "label" : "Ticker",
+                "nativeName" : "Ticker",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "StockTicker.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "PrevClose",
+                "fieldType" : "CONNECTOR",
+                "label" : "PrevClose",
+                "nativeName" : "PrevClose",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "StockTicker.txt"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-03-30T21:40:25.931Z",
+        "name" : "Lookup_ETF",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Lookup cache directory name",
+            "value" : "$PMCacheDir"
+          },
+          {
+            "name" : "Lookup cache persistent",
+            "value" : "false"
+          },
+          {
+            "name" : "Re-cache from lookup source",
+            "value" : "false"
+          },
+          {
+            "name" : "Lookup Data Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Lookup Index Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          },
+          {
+            "name" : "Case Sensitive String Comparison",
+            "value" : "false"
+          },
+          {
+            "name" : "Sorted Input",
+            "value" : "false"
+          },
+          {
+            "name" : "Lookup source is static",
+            "value" : "false"
+          },
+          {
+            "name" : "Pre-build lookup cache",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Optional",
+            "value" : "true"
+          }
+        ],
+        "multipleMatchPolicy" : "Use Any Value",
+        "returnPortName" : "PrevClose",
+        "unconnected" : "true",
+        "useLabels" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Ticker"
+            },
+            "name" : "Ticker",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PrevClose"
+            },
+            "name" : "PrevClose",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 5
+          }
+        ],
+        "inputPortNames" : [
+          "I_Ticker"
+        ],
+        "lookupConditions" : [
+          {
+            "leftOperand" : "Ticker",
+            "operator" : "=",
+            "rightOperand" : "I_Ticker"
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "ETF-Ticker.txt",
+            "label" : "ETF-Ticker.txt",
+            "objectName" : "ETF-Ticker.txt",
+            "path" : "ETF-Ticker.txt",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Ticker",
+                "fieldType" : "CONNECTOR",
+                "label" : "Ticker",
+                "nativeName" : "Ticker",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ETF-Ticker.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "PrevClose",
+                "fieldType" : "CONNECTOR",
+                "label" : "PrevClose",
+                "nativeName" : "PrevClose",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 5,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ETF-Ticker.txt"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-03-30T21:40:42.079Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "name" : "v_PrevClose",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 5,
+            "expFieldType" : "VARIABLE",
+            "expression" : "Decode(SecurityType,'Stock', \n:LKP.Lookup_Stockticker(Ticker),'ETF', \n:LKP.Lookup_ETF(Ticker),0)"
+          },
+          {
+            "name" : "TotalValue",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 5,
+            "expFieldType" : "OUTPUT",
+            "expression" : "v_PrevClose*NoOfUnits"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:52 EDT"
+}

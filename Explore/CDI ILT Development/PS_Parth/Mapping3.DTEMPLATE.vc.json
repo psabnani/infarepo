@@ -1,0 +1,3717 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mapping3",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-07-06T17:20:06.828Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "customer_number"
+            },
+            "name" : "customer_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "master_number"
+            },
+            "name" : "master_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "customer_name"
+            },
+            "name" : "customer_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "payment_terms_code"
+            },
+            "name" : "payment_terms_code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "payment_terms_desc"
+            },
+            "name" : "payment_terms_desc",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "order_minimum"
+            },
+            "name" : "order_minimum",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "line_minimum"
+            },
+            "name" : "line_minimum",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "line_minimum_pref_code"
+            },
+            "name" : "line_minimum_pref_code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "line_minimum_pref_desc"
+            },
+            "name" : "line_minimum_pref_desc",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_addr_1"
+            },
+            "name" : "bill_to_addr_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_addr_2"
+            },
+            "name" : "bill_to_addr_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_addr_3"
+            },
+            "name" : "bill_to_addr_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_attention"
+            },
+            "name" : "bill_to_attention",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_city"
+            },
+            "name" : "bill_to_city",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_state"
+            },
+            "name" : "bill_to_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_country"
+            },
+            "name" : "bill_to_country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bill_to_zip"
+            },
+            "name" : "bill_to_zip",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_name"
+            },
+            "name" : "ship_to_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_addr_1"
+            },
+            "name" : "ship_to_addr_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_addr_2"
+            },
+            "name" : "ship_to_addr_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_addr_3"
+            },
+            "name" : "ship_to_addr_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_attention"
+            },
+            "name" : "ship_to_attention",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_city"
+            },
+            "name" : "ship_to_city",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_state"
+            },
+            "name" : "ship_to_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_country"
+            },
+            "name" : "ship_to_country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_to_zip"
+            },
+            "name" : "ship_to_zip",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_via_code"
+            },
+            "name" : "ship_via_code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_via_desc"
+            },
+            "name" : "ship_via_desc",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "carrier_code"
+            },
+            "name" : "carrier_code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "carrier_desc"
+            },
+            "name" : "carrier_desc",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "carrier_account"
+            },
+            "name" : "carrier_account",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "outstanding_receivables"
+            },
+            "name" : "outstanding_receivables",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "receivables_past_due"
+            },
+            "name" : "receivables_past_due",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "consolidation_frequency"
+            },
+            "name" : "consolidation_frequency",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "consolidation_day"
+            },
+            "name" : "consolidation_day",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "consolidation_cutoff_time"
+            },
+            "name" : "consolidation_cutoff_time",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "packaging_setting_ea"
+            },
+            "name" : "packaging_setting_ea",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "packaging_setting_lb"
+            },
+            "name" : "packaging_setting_lb",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sales_rep_number"
+            },
+            "name" : "sales_rep_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sales_rep_name"
+            },
+            "name" : "sales_rep_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sales_rep_email"
+            },
+            "name" : "sales_rep_email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sales_rep_phone"
+            },
+            "name" : "sales_rep_phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sales_rep_fax"
+            },
+            "name" : "sales_rep_fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "pn_desc_on_invoice"
+            },
+            "name" : "pn_desc_on_invoice",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "po_number_on_invoice"
+            },
+            "name" : "po_number_on_invoice",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mfr_name_on_invoice"
+            },
+            "name" : "mfr_name_on_invoice",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mfr_certs_required"
+            },
+            "name" : "mfr_certs_required",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "be_certs_required"
+            },
+            "name" : "be_certs_required",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "show_pn_on_be_cert"
+            },
+            "name" : "show_pn_on_be_cert",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ship_line_item_complete"
+            },
+            "name" : "ship_line_item_complete",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "minimum_shelf_life"
+            },
+            "name" : "minimum_shelf_life",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "credit_hold_status"
+            },
+            "name" : "credit_hold_status",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "currency_code"
+            },
+            "name" : "currency_code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "market_segment_category"
+            },
+            "name" : "market_segment_category",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "market_segment_subcategory"
+            },
+            "name" : "market_segment_subcategory",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "test_report"
+            },
+            "name" : "test_report",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dfar"
+            },
+            "name" : "dfar",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "default_whse"
+            },
+            "name" : "default_whse",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "default_whse_city"
+            },
+            "name" : "default_whse_city",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "default_whse_state"
+            },
+            "name" : "default_whse_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "default_whse_country"
+            },
+            "name" : "default_whse_country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "contract_warehouses"
+            },
+            "name" : "contract_warehouses",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "symphony_enabled_flag"
+            },
+            "name" : "symphony_enabled_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "symphony_direct_ship_flag"
+            },
+            "name" : "symphony_direct_ship_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "backup_rep_number"
+            },
+            "name" : "backup_rep_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "backup_rep_name"
+            },
+            "name" : "backup_rep_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "backup_rep_email"
+            },
+            "name" : "backup_rep_email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "backup_rep_phone"
+            },
+            "name" : "backup_rep_phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "backup_rep_fax"
+            },
+            "name" : "backup_rep_fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "rep_supervisor_number"
+            },
+            "name" : "rep_supervisor_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "rep_supervisor_name"
+            },
+            "name" : "rep_supervisor_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "rep_supervisor_email"
+            },
+            "name" : "rep_supervisor_email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "rep_supervisor_phone"
+            },
+            "name" : "rep_supervisor_phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "rep_supervisor_fax"
+            },
+            "name" : "rep_supervisor_fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_name"
+            },
+            "name" : "ud_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_addr_1"
+            },
+            "name" : "ud_addr_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_addr_2"
+            },
+            "name" : "ud_addr_2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_addr_3"
+            },
+            "name" : "ud_addr_3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_attention"
+            },
+            "name" : "ud_attention",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_city"
+            },
+            "name" : "ud_city",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_state"
+            },
+            "name" : "ud_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_country"
+            },
+            "name" : "ud_country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ud_zip"
+            },
+            "name" : "ud_zip",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "whse_seq_group"
+            },
+            "name" : "whse_seq_group",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "incoterm"
+            },
+            "name" : "incoterm",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "incoterm_desc"
+            },
+            "name" : "incoterm_desc",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "fixed_incoterm_flag"
+            },
+            "name" : "fixed_incoterm_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "aog_fee_inside_working_hrs"
+            },
+            "name" : "aog_fee_inside_working_hrs",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "aog_fee_outside_working_hrs"
+            },
+            "name" : "aog_fee_outside_working_hrs",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "aog_fee_weekend"
+            },
+            "name" : "aog_fee_weekend",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "market_segment_code"
+            },
+            "name" : "market_segment_code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "hpp_flag"
+            },
+            "name" : "hpp_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "_130_3_flag"
+            },
+            "name" : "_130_3_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "customer_short_name"
+            },
+            "name" : "customer_short_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "warehouse_stock_groups"
+            },
+            "name" : "warehouse_stock_groups",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "asl_customer_flag"
+            },
+            "name" : "asl_customer_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "asl_customer_mfr_codes"
+            },
+            "name" : "asl_customer_mfr_codes",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "government_asl"
+            },
+            "name" : "government_asl",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "asl_government_mfr_codes"
+            },
+            "name" : "asl_government_mfr_codes",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "line_minimum_pricelist"
+            },
+            "name" : "line_minimum_pricelist",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "line_minimum_contracts"
+            },
+            "name" : "line_minimum_contracts",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "blanket_po"
+            },
+            "name" : "blanket_po",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "certificate_of_origin"
+            },
+            "name" : "certificate_of_origin",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "hazmat_fee"
+            },
+            "name" : "hazmat_fee",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_number"
+            },
+            "name" : "execution_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_name"
+            },
+            "name" : "execution_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_email"
+            },
+            "name" : "execution_email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_phone"
+            },
+            "name" : "execution_phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_fax"
+            },
+            "name" : "execution_fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_manager_number"
+            },
+            "name" : "execution_manager_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_manager_name"
+            },
+            "name" : "execution_manager_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_manager_email"
+            },
+            "name" : "execution_manager_email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_manager_phone"
+            },
+            "name" : "execution_manager_phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_manager_fax"
+            },
+            "name" : "execution_manager_fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_backup_number"
+            },
+            "name" : "execution_backup_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_backup_name"
+            },
+            "name" : "execution_backup_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_backup_email"
+            },
+            "name" : "execution_backup_email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_backup_phone"
+            },
+            "name" : "execution_backup_phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_backup_fax"
+            },
+            "name" : "execution_backup_fax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sales_team_description"
+            },
+            "name" : "sales_team_description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "execution_team_description"
+            },
+            "name" : "execution_team_description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "account_manager"
+            },
+            "name" : "account_manager",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "notify_users_internal"
+            },
+            "name" : "notify_users_internal",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "notify_users_external"
+            },
+            "name" : "notify_users_external",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "auto_complete_order_portal"
+            },
+            "name" : "auto_complete_order_portal",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bin_consignment_flag"
+            },
+            "name" : "bin_consignment_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bin_consignment_xo_flag"
+            },
+            "name" : "bin_consignment_xo_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "serial_label_flag"
+            },
+            "name" : "serial_label_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "credit_limit"
+            },
+            "name" : "credit_limit",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "open_credit_limit"
+            },
+            "name" : "open_credit_limit",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "expired_sl_consumption"
+            },
+            "name" : "expired_sl_consumption",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ecom_account_only_flag"
+            },
+            "name" : "ecom_account_only_flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "sample_file.txt",
+            "label" : "sample_file.txt",
+            "objectName" : "sample_file.txt",
+            "path" : "sample_file.txt",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "customer_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "customer_number",
+                "nativeName" : "customer_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "master_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "master_number",
+                "nativeName" : "master_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "customer_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "customer_name",
+                "nativeName" : "customer_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "payment_terms_code",
+                "fieldType" : "CONNECTOR",
+                "label" : "payment_terms_code",
+                "nativeName" : "payment_terms_code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "payment_terms_desc",
+                "fieldType" : "CONNECTOR",
+                "label" : "payment_terms_desc",
+                "nativeName" : "payment_terms_desc",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "order_minimum",
+                "fieldType" : "CONNECTOR",
+                "label" : "order_minimum",
+                "nativeName" : "order_minimum",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "line_minimum",
+                "fieldType" : "CONNECTOR",
+                "label" : "line_minimum",
+                "nativeName" : "line_minimum",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "line_minimum_pref_code",
+                "fieldType" : "CONNECTOR",
+                "label" : "line_minimum_pref_code",
+                "nativeName" : "line_minimum_pref_code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "line_minimum_pref_desc",
+                "fieldType" : "CONNECTOR",
+                "label" : "line_minimum_pref_desc",
+                "nativeName" : "line_minimum_pref_desc",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_addr_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_addr_1",
+                "nativeName" : "bill_to_addr_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_addr_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_addr_2",
+                "nativeName" : "bill_to_addr_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_addr_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_addr_3",
+                "nativeName" : "bill_to_addr_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_attention",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_attention",
+                "nativeName" : "bill_to_attention",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_city",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_city",
+                "nativeName" : "bill_to_city",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_state",
+                "nativeName" : "bill_to_state",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_country",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_country",
+                "nativeName" : "bill_to_country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bill_to_zip",
+                "fieldType" : "CONNECTOR",
+                "label" : "bill_to_zip",
+                "nativeName" : "bill_to_zip",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_name",
+                "nativeName" : "ship_to_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_addr_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_addr_1",
+                "nativeName" : "ship_to_addr_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_addr_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_addr_2",
+                "nativeName" : "ship_to_addr_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_addr_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_addr_3",
+                "nativeName" : "ship_to_addr_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_attention",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_attention",
+                "nativeName" : "ship_to_attention",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_city",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_city",
+                "nativeName" : "ship_to_city",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_state",
+                "nativeName" : "ship_to_state",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_country",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_country",
+                "nativeName" : "ship_to_country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_to_zip",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_to_zip",
+                "nativeName" : "ship_to_zip",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_via_code",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_via_code",
+                "nativeName" : "ship_via_code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_via_desc",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_via_desc",
+                "nativeName" : "ship_via_desc",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "carrier_code",
+                "fieldType" : "CONNECTOR",
+                "label" : "carrier_code",
+                "nativeName" : "carrier_code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "carrier_desc",
+                "fieldType" : "CONNECTOR",
+                "label" : "carrier_desc",
+                "nativeName" : "carrier_desc",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "carrier_account",
+                "fieldType" : "CONNECTOR",
+                "label" : "carrier_account",
+                "nativeName" : "carrier_account",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "outstanding_receivables",
+                "fieldType" : "CONNECTOR",
+                "label" : "outstanding_receivables",
+                "nativeName" : "outstanding_receivables",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "receivables_past_due",
+                "fieldType" : "CONNECTOR",
+                "label" : "receivables_past_due",
+                "nativeName" : "receivables_past_due",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "consolidation_frequency",
+                "fieldType" : "CONNECTOR",
+                "label" : "consolidation_frequency",
+                "nativeName" : "consolidation_frequency",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "consolidation_day",
+                "fieldType" : "CONNECTOR",
+                "label" : "consolidation_day",
+                "nativeName" : "consolidation_day",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "consolidation_cutoff_time",
+                "fieldType" : "CONNECTOR",
+                "label" : "consolidation_cutoff_time",
+                "nativeName" : "consolidation_cutoff_time",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "packaging_setting_ea",
+                "fieldType" : "CONNECTOR",
+                "label" : "packaging_setting_ea",
+                "nativeName" : "packaging_setting_ea",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "packaging_setting_lb",
+                "fieldType" : "CONNECTOR",
+                "label" : "packaging_setting_lb",
+                "nativeName" : "packaging_setting_lb",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "sales_rep_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "sales_rep_number",
+                "nativeName" : "sales_rep_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "sales_rep_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "sales_rep_name",
+                "nativeName" : "sales_rep_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "sales_rep_email",
+                "fieldType" : "CONNECTOR",
+                "label" : "sales_rep_email",
+                "nativeName" : "sales_rep_email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "sales_rep_phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "sales_rep_phone",
+                "nativeName" : "sales_rep_phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "sales_rep_fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "sales_rep_fax",
+                "nativeName" : "sales_rep_fax",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "pn_desc_on_invoice",
+                "fieldType" : "CONNECTOR",
+                "label" : "pn_desc_on_invoice",
+                "nativeName" : "pn_desc_on_invoice",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "po_number_on_invoice",
+                "fieldType" : "CONNECTOR",
+                "label" : "po_number_on_invoice",
+                "nativeName" : "po_number_on_invoice",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "mfr_name_on_invoice",
+                "fieldType" : "CONNECTOR",
+                "label" : "mfr_name_on_invoice",
+                "nativeName" : "mfr_name_on_invoice",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "mfr_certs_required",
+                "fieldType" : "CONNECTOR",
+                "label" : "mfr_certs_required",
+                "nativeName" : "mfr_certs_required",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "be_certs_required",
+                "fieldType" : "CONNECTOR",
+                "label" : "be_certs_required",
+                "nativeName" : "be_certs_required",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "show_pn_on_be_cert",
+                "fieldType" : "CONNECTOR",
+                "label" : "show_pn_on_be_cert",
+                "nativeName" : "show_pn_on_be_cert",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ship_line_item_complete",
+                "fieldType" : "CONNECTOR",
+                "label" : "ship_line_item_complete",
+                "nativeName" : "ship_line_item_complete",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "minimum_shelf_life",
+                "fieldType" : "CONNECTOR",
+                "label" : "minimum_shelf_life",
+                "nativeName" : "minimum_shelf_life",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "credit_hold_status",
+                "fieldType" : "CONNECTOR",
+                "label" : "credit_hold_status",
+                "nativeName" : "credit_hold_status",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "currency_code",
+                "fieldType" : "CONNECTOR",
+                "label" : "currency_code",
+                "nativeName" : "currency_code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "market_segment_category",
+                "fieldType" : "CONNECTOR",
+                "label" : "market_segment_category",
+                "nativeName" : "market_segment_category",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "market_segment_subcategory",
+                "fieldType" : "CONNECTOR",
+                "label" : "market_segment_subcategory",
+                "nativeName" : "market_segment_subcategory",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "test_report",
+                "fieldType" : "CONNECTOR",
+                "label" : "test_report",
+                "nativeName" : "test_report",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "dfar",
+                "fieldType" : "CONNECTOR",
+                "label" : "dfar",
+                "nativeName" : "dfar",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "default_whse",
+                "fieldType" : "CONNECTOR",
+                "label" : "default_whse",
+                "nativeName" : "default_whse",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "default_whse_city",
+                "fieldType" : "CONNECTOR",
+                "label" : "default_whse_city",
+                "nativeName" : "default_whse_city",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "default_whse_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "default_whse_state",
+                "nativeName" : "default_whse_state",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "default_whse_country",
+                "fieldType" : "CONNECTOR",
+                "label" : "default_whse_country",
+                "nativeName" : "default_whse_country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "contract_warehouses",
+                "fieldType" : "CONNECTOR",
+                "label" : "contract_warehouses",
+                "nativeName" : "contract_warehouses",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "symphony_enabled_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "symphony_enabled_flag",
+                "nativeName" : "symphony_enabled_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "symphony_direct_ship_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "symphony_direct_ship_flag",
+                "nativeName" : "symphony_direct_ship_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "backup_rep_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "backup_rep_number",
+                "nativeName" : "backup_rep_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "backup_rep_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "backup_rep_name",
+                "nativeName" : "backup_rep_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "backup_rep_email",
+                "fieldType" : "CONNECTOR",
+                "label" : "backup_rep_email",
+                "nativeName" : "backup_rep_email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "backup_rep_phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "backup_rep_phone",
+                "nativeName" : "backup_rep_phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "backup_rep_fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "backup_rep_fax",
+                "nativeName" : "backup_rep_fax",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "rep_supervisor_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "rep_supervisor_number",
+                "nativeName" : "rep_supervisor_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "rep_supervisor_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "rep_supervisor_name",
+                "nativeName" : "rep_supervisor_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "rep_supervisor_email",
+                "fieldType" : "CONNECTOR",
+                "label" : "rep_supervisor_email",
+                "nativeName" : "rep_supervisor_email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "rep_supervisor_phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "rep_supervisor_phone",
+                "nativeName" : "rep_supervisor_phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "rep_supervisor_fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "rep_supervisor_fax",
+                "nativeName" : "rep_supervisor_fax",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_name",
+                "nativeName" : "ud_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_addr_1",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_addr_1",
+                "nativeName" : "ud_addr_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_addr_2",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_addr_2",
+                "nativeName" : "ud_addr_2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_addr_3",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_addr_3",
+                "nativeName" : "ud_addr_3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_attention",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_attention",
+                "nativeName" : "ud_attention",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_city",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_city",
+                "nativeName" : "ud_city",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_state",
+                "nativeName" : "ud_state",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_country",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_country",
+                "nativeName" : "ud_country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ud_zip",
+                "fieldType" : "CONNECTOR",
+                "label" : "ud_zip",
+                "nativeName" : "ud_zip",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "whse_seq_group",
+                "fieldType" : "CONNECTOR",
+                "label" : "whse_seq_group",
+                "nativeName" : "whse_seq_group",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "incoterm",
+                "fieldType" : "CONNECTOR",
+                "label" : "incoterm",
+                "nativeName" : "incoterm",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "incoterm_desc",
+                "fieldType" : "CONNECTOR",
+                "label" : "incoterm_desc",
+                "nativeName" : "incoterm_desc",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "fixed_incoterm_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "fixed_incoterm_flag",
+                "nativeName" : "fixed_incoterm_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "aog_fee_inside_working_hrs",
+                "fieldType" : "CONNECTOR",
+                "label" : "aog_fee_inside_working_hrs",
+                "nativeName" : "aog_fee_inside_working_hrs",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "aog_fee_outside_working_hrs",
+                "fieldType" : "CONNECTOR",
+                "label" : "aog_fee_outside_working_hrs",
+                "nativeName" : "aog_fee_outside_working_hrs",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "aog_fee_weekend",
+                "fieldType" : "CONNECTOR",
+                "label" : "aog_fee_weekend",
+                "nativeName" : "aog_fee_weekend",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "market_segment_code",
+                "fieldType" : "CONNECTOR",
+                "label" : "market_segment_code",
+                "nativeName" : "market_segment_code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "hpp_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "hpp_flag",
+                "nativeName" : "hpp_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "_130_3_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "_130_3_flag",
+                "nativeName" : "_130_3_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "customer_short_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "customer_short_name",
+                "nativeName" : "customer_short_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "warehouse_stock_groups",
+                "fieldType" : "CONNECTOR",
+                "label" : "warehouse_stock_groups",
+                "nativeName" : "warehouse_stock_groups",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "asl_customer_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "asl_customer_flag",
+                "nativeName" : "asl_customer_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "asl_customer_mfr_codes",
+                "fieldType" : "CONNECTOR",
+                "label" : "asl_customer_mfr_codes",
+                "nativeName" : "asl_customer_mfr_codes",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "government_asl",
+                "fieldType" : "CONNECTOR",
+                "label" : "government_asl",
+                "nativeName" : "government_asl",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "asl_government_mfr_codes",
+                "fieldType" : "CONNECTOR",
+                "label" : "asl_government_mfr_codes",
+                "nativeName" : "asl_government_mfr_codes",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "line_minimum_pricelist",
+                "fieldType" : "CONNECTOR",
+                "label" : "line_minimum_pricelist",
+                "nativeName" : "line_minimum_pricelist",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "line_minimum_contracts",
+                "fieldType" : "CONNECTOR",
+                "label" : "line_minimum_contracts",
+                "nativeName" : "line_minimum_contracts",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "blanket_po",
+                "fieldType" : "CONNECTOR",
+                "label" : "blanket_po",
+                "nativeName" : "blanket_po",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "certificate_of_origin",
+                "fieldType" : "CONNECTOR",
+                "label" : "certificate_of_origin",
+                "nativeName" : "certificate_of_origin",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "hazmat_fee",
+                "fieldType" : "CONNECTOR",
+                "label" : "hazmat_fee",
+                "nativeName" : "hazmat_fee",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_number",
+                "nativeName" : "execution_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_name",
+                "nativeName" : "execution_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_email",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_email",
+                "nativeName" : "execution_email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_phone",
+                "nativeName" : "execution_phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_fax",
+                "nativeName" : "execution_fax",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_manager_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_manager_number",
+                "nativeName" : "execution_manager_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_manager_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_manager_name",
+                "nativeName" : "execution_manager_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_manager_email",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_manager_email",
+                "nativeName" : "execution_manager_email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_manager_phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_manager_phone",
+                "nativeName" : "execution_manager_phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_manager_fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_manager_fax",
+                "nativeName" : "execution_manager_fax",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_backup_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_backup_number",
+                "nativeName" : "execution_backup_number",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_backup_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_backup_name",
+                "nativeName" : "execution_backup_name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_backup_email",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_backup_email",
+                "nativeName" : "execution_backup_email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_backup_phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_backup_phone",
+                "nativeName" : "execution_backup_phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_backup_fax",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_backup_fax",
+                "nativeName" : "execution_backup_fax",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "sales_team_description",
+                "fieldType" : "CONNECTOR",
+                "label" : "sales_team_description",
+                "nativeName" : "sales_team_description",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "execution_team_description",
+                "fieldType" : "CONNECTOR",
+                "label" : "execution_team_description",
+                "nativeName" : "execution_team_description",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "account_manager",
+                "fieldType" : "CONNECTOR",
+                "label" : "account_manager",
+                "nativeName" : "account_manager",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "notify_users_internal",
+                "fieldType" : "CONNECTOR",
+                "label" : "notify_users_internal",
+                "nativeName" : "notify_users_internal",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "notify_users_external",
+                "fieldType" : "CONNECTOR",
+                "label" : "notify_users_external",
+                "nativeName" : "notify_users_external",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "auto_complete_order_portal",
+                "fieldType" : "CONNECTOR",
+                "label" : "auto_complete_order_portal",
+                "nativeName" : "auto_complete_order_portal",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bin_consignment_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "bin_consignment_flag",
+                "nativeName" : "bin_consignment_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "bin_consignment_xo_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "bin_consignment_xo_flag",
+                "nativeName" : "bin_consignment_xo_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "serial_label_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "serial_label_flag",
+                "nativeName" : "serial_label_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "credit_limit",
+                "fieldType" : "CONNECTOR",
+                "label" : "credit_limit",
+                "nativeName" : "credit_limit",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "open_credit_limit",
+                "fieldType" : "CONNECTOR",
+                "label" : "open_credit_limit",
+                "nativeName" : "open_credit_limit",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "expired_sl_consumption",
+                "fieldType" : "CONNECTOR",
+                "label" : "expired_sl_consumption",
+                "nativeName" : "expired_sl_consumption",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              },
+              {
+                "name" : "ecom_account_only_flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "ecom_account_only_flag",
+                "nativeName" : "ecom_account_only_flag",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "sample_file.txt"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : "\t",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-07-06T17:20:06.830Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@9USXwyHkQlGgRlk1CpCrA2",
+          "connectionName" : "PS_Parth_Oracle_local",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "SAMPLE_TABLE",
+            "label" : "SAMPLE_TABLE",
+            "path" : "SAMPLE_TABLE",
+            "retainMetadata" : "false"
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "true",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:54 EDT"
+}

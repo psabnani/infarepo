@@ -1,0 +1,603 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "PS_Parth_DynamicLinking",
+    "links" : [
+      {
+        "link" : "Sorter1 -> Target"
+      },
+      {
+        "link" : "Source -> Sorter1"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-04-01T18:36:15.626Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "BillingSystemId"
+            },
+            "name" : "BillingSystemId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "First_Name"
+            },
+            "name" : "First_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Last_Name"
+            },
+            "name" : "Last_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Title"
+            },
+            "name" : "Title",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Mailing_street"
+            },
+            "name" : "Mailing_street",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Mailing_city"
+            },
+            "name" : "Mailing_city",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Mailing_state"
+            },
+            "name" : "Mailing_state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Mailing_zip"
+            },
+            "name" : "Mailing_zip",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Mailing_country"
+            },
+            "name" : "Mailing_country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Phone"
+            },
+            "name" : "Phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Mobile"
+            },
+            "name" : "Mobile",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "email_ports"
+            },
+            "name" : "email_ports",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Account_Name"
+            },
+            "name" : "Account_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "date_ports"
+            },
+            "name" : "date_ports",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Salary"
+            },
+            "name" : "Salary",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "Customer_Detail.csv",
+            "label" : "Customer_Detail.csv",
+            "objectName" : "Customer_Detail.csv",
+            "path" : "Customer_Detail.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "BillingSystemId",
+                "fieldType" : "CONNECTOR",
+                "label" : "BillingSystemId",
+                "nativeName" : "BillingSystemId",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "First_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "First_Name",
+                "nativeName" : "First_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Last_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Last_Name",
+                "nativeName" : "Last_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Title",
+                "fieldType" : "CONNECTOR",
+                "label" : "Title",
+                "nativeName" : "Title",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Mailing_street",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mailing_street",
+                "nativeName" : "Mailing_street",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Mailing_city",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mailing_city",
+                "nativeName" : "Mailing_city",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Mailing_state",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mailing_state",
+                "nativeName" : "Mailing_state",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Mailing_zip",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mailing_zip",
+                "nativeName" : "Mailing_zip",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Mailing_country",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mailing_country",
+                "nativeName" : "Mailing_country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Phone",
+                "fieldType" : "CONNECTOR",
+                "label" : "Phone",
+                "nativeName" : "Phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Mobile",
+                "fieldType" : "CONNECTOR",
+                "label" : "Mobile",
+                "nativeName" : "Mobile",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "email_ports",
+                "fieldType" : "CONNECTOR",
+                "label" : "email_ports",
+                "nativeName" : "email_ports",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Account_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Account_Name",
+                "nativeName" : "Account_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "date_ports",
+                "fieldType" : "CONNECTOR",
+                "label" : "date_ports",
+                "nativeName" : "date_ports",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Salary",
+                "fieldType" : "CONNECTOR",
+                "label" : "Salary",
+                "nativeName" : "Salary",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Customer_Detail.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-04-01T18:36:15.647Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Updated_Data_%d_%m_%y.csv",
+            "label" : "Updated_Data_%d_%m_%y.csv",
+            "path" : "Updated_Data_%d_%m_%y.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "true",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-04-01T18:42:19.376Z",
+        "name" : "Sorter1",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sorterMode" : "SIMPLE",
+        "sortEntries" : [
+          {
+            "ascending" : "true",
+            "fieldName" : "First_Name"
+          }
+        ]
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:55 EDT"
+}

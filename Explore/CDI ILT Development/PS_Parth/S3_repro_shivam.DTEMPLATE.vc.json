@@ -1,0 +1,1148 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "S3_repro_shivam",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-07-12T23:30:02.888Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "data"
+            },
+            "name" : "data",
+            "platformType" : {
+              "name" : "binary"
+            },
+            "precision" : 65536,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FileName"
+            },
+            "name" : "FileName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1024,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@8Z85QHCud6LfE08HvvuDAk",
+          "connectionName" : "PS_AWS_S3_Linux",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "dataFormat" : {
+            "formatId" : "Flat",
+            "validateHSchema" : "false",
+            "attributes" : [
+              {
+                "name" : "delimiter",
+                "value" : ","
+              },
+              {
+                "name" : "escapeChar",
+                "value" : "\\"
+              },
+              {
+                "name" : "qualifier",
+                "value" : "\""
+              },
+              {
+                "name" : "qualifierMode",
+                "value" : "MINIMAL"
+              },
+              {
+                "name" : "codePage",
+                "value" : "UTF-8"
+              },
+              {
+                "name" : "headerLineNumber",
+                "value" : "1"
+              },
+              {
+                "name" : "firstDataRow",
+                "value" : "2"
+              },
+              {
+                "name" : "targetHeader",
+                "value" : "With Header"
+              },
+              {
+                "name" : "importColumnFromFirstLine",
+                "value" : "true"
+              },
+              {
+                "name" : "generateHeader",
+                "value" : "true"
+              },
+              {
+                "name" : "fixedWidthMode",
+                "value" : "false"
+              },
+              {
+                "name" : "escapeCharacterDataRetained",
+                "value" : "false"
+              },
+              {
+                "name" : "maxRowsToPreview",
+                "value" : "0"
+              }
+            ]
+          },
+          "object" : {
+            "name" : "iam.qa.bucket/PS%2F/RPT_ACCOUNTDETAILS.manifest",
+            "label" : "RPT_ACCOUNTDETAILS.manifest",
+            "objectName" : "RPT_ACCOUNTDETAILS.manifest",
+            "objectType" : "amazons3",
+            "path" : "iam.qa.bucket/PS%2F/RPT_ACCOUNTDETAILS.manifest",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "data",
+                "fieldType" : "CONNECTOR",
+                "label" : "data",
+                "nativeName" : "data",
+                "nativeType" : "binary",
+                "original" : "false",
+                "precision" : 65536,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RPT_ACCOUNTDETAILS.manifest"
+                  }
+                ]
+              },
+              {
+                "name" : "FileName",
+                "fieldType" : "CONNECTOR",
+                "label" : "FileName",
+                "nativeName" : "FileName",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 1024,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "RPT_ACCOUNTDETAILS.manifest"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-07-12T23:30:02.889Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "SiteId"
+            },
+            "name" : "SiteId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AccountID"
+            },
+            "name" : "AccountID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TransDate"
+            },
+            "name" : "TransDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "OpenTransDate"
+            },
+            "name" : "OpenTransDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EmployeeID"
+            },
+            "name" : "EmployeeID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EmpFullName"
+            },
+            "name" : "EmpFullName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ClosedBy"
+            },
+            "name" : "ClosedBy",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ClosedByName"
+            },
+            "name" : "ClosedByName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "OpenDateTime"
+            },
+            "name" : "OpenDateTime",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CloseDateTime"
+            },
+            "name" : "CloseDateTime",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TableNo"
+            },
+            "name" : "TableNo",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Covers"
+            },
+            "name" : "Covers",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SubCatCovers"
+            },
+            "name" : "SubCatCovers",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "AccountTotal"
+            },
+            "name" : "AccountTotal",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Promotion"
+            },
+            "name" : "Promotion",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Discount"
+            },
+            "name" : "Discount",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IncTax"
+            },
+            "name" : "IncTax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ExcTax"
+            },
+            "name" : "ExcTax",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ServiceCharge"
+            },
+            "name" : "ServiceCharge",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Tip"
+            },
+            "name" : "Tip",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ItemCount"
+            },
+            "name" : "ItemCount",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DwellTime"
+            },
+            "name" : "DwellTime",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ReopenedAccount"
+            },
+            "name" : "ReopenedAccount",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DestinationCode"
+            },
+            "name" : "DestinationCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "s3_file_path"
+            },
+            "name" : "s3_file_path",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SiteRef"
+            },
+            "name" : "SiteRef",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "order_dest_DestinationName"
+            },
+            "name" : "order_dest_DestinationName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@8Z85QHCud6LfE08HvvuDAk",
+          "connectionName" : "PS_AWS_S3_Linux",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "dataFormat" : {
+            "formatId" : "Parquet",
+            "validateHSchema" : "false"
+          },
+          "object" : {
+            "name" : "S3_shivam_repro_targetfile.parquet",
+            "label" : "S3_shivam_repro_targetfile.parquet",
+            "path" : "S3_shivam_repro_targetfile.parquet",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "SiteId",
+                "fieldType" : "PARSER",
+                "label" : "SiteId",
+                "nativeName" : "SiteId",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "AccountID",
+                "fieldType" : "PARSER",
+                "label" : "AccountID",
+                "nativeName" : "AccountID",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "TransDate",
+                "fieldType" : "PARSER",
+                "label" : "TransDate",
+                "nativeName" : "TransDate",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "OpenTransDate",
+                "fieldType" : "PARSER",
+                "label" : "OpenTransDate",
+                "nativeName" : "OpenTransDate",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "EmployeeID",
+                "fieldType" : "PARSER",
+                "label" : "EmployeeID",
+                "nativeName" : "EmployeeID",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "EmpFullName",
+                "fieldType" : "PARSER",
+                "label" : "EmpFullName",
+                "nativeName" : "EmpFullName",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ClosedBy",
+                "fieldType" : "PARSER",
+                "label" : "ClosedBy",
+                "nativeName" : "ClosedBy",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ClosedByName",
+                "fieldType" : "PARSER",
+                "label" : "ClosedByName",
+                "nativeName" : "ClosedByName",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "OpenDateTime",
+                "fieldType" : "PARSER",
+                "label" : "OpenDateTime",
+                "nativeName" : "OpenDateTime",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "CloseDateTime",
+                "fieldType" : "PARSER",
+                "label" : "CloseDateTime",
+                "nativeName" : "CloseDateTime",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "TableNo",
+                "fieldType" : "PARSER",
+                "label" : "TableNo",
+                "nativeName" : "TableNo",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "Covers",
+                "fieldType" : "PARSER",
+                "label" : "Covers",
+                "nativeName" : "Covers",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "SubCatCovers",
+                "fieldType" : "PARSER",
+                "label" : "SubCatCovers",
+                "nativeName" : "SubCatCovers",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "AccountTotal",
+                "fieldType" : "PARSER",
+                "label" : "AccountTotal",
+                "nativeName" : "AccountTotal",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "Promotion",
+                "fieldType" : "PARSER",
+                "label" : "Promotion",
+                "nativeName" : "Promotion",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "Discount",
+                "fieldType" : "PARSER",
+                "label" : "Discount",
+                "nativeName" : "Discount",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "IncTax",
+                "fieldType" : "PARSER",
+                "label" : "IncTax",
+                "nativeName" : "IncTax",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ExcTax",
+                "fieldType" : "PARSER",
+                "label" : "ExcTax",
+                "nativeName" : "ExcTax",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ServiceCharge",
+                "fieldType" : "PARSER",
+                "label" : "ServiceCharge",
+                "nativeName" : "ServiceCharge",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "Tip",
+                "fieldType" : "PARSER",
+                "label" : "Tip",
+                "nativeName" : "Tip",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ItemCount",
+                "fieldType" : "PARSER",
+                "label" : "ItemCount",
+                "nativeName" : "ItemCount",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "DwellTime",
+                "fieldType" : "PARSER",
+                "label" : "DwellTime",
+                "nativeName" : "DwellTime",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ReopenedAccount",
+                "fieldType" : "PARSER",
+                "label" : "ReopenedAccount",
+                "nativeName" : "ReopenedAccount",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "DestinationCode",
+                "fieldType" : "PARSER",
+                "label" : "DestinationCode",
+                "nativeName" : "DestinationCode",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "s3_file_path",
+                "fieldType" : "PARSER",
+                "label" : "s3_file_path",
+                "nativeName" : "s3_file_path",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "SiteRef",
+                "fieldType" : "PARSER",
+                "label" : "SiteRef",
+                "nativeName" : "SiteRef",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "order_dest_DestinationName",
+                "fieldType" : "PARSER",
+                "label" : "order_dest_DestinationName",
+                "nativeName" : "order_dest_DestinationName",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "S3_shivam_repro_targetfile.parquet"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:57 EDT"
+}

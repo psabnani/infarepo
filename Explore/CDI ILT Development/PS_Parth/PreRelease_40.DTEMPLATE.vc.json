@@ -1,0 +1,284 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "PreRelease_40",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-06-28T23:04:50.601Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ENTY_ID"
+            },
+            "name" : "ENTY_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRIMARY_NM"
+            },
+            "name" : "PRIMARY_NM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "Prerelease_R40.csv",
+            "label" : "Prerelease_R40.csv",
+            "objectName" : "Prerelease_R40.csv",
+            "path" : "Prerelease_R40.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ENTY_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ENTY_ID",
+                "nativeName" : "ENTY_ID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Prerelease_R40.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "PRIMARY_NM",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRIMARY_NM",
+                "nativeName" : "PRIMARY_NM",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Prerelease_R40.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-06-28T23:04:50.619Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ENTY_ID"
+            },
+            "name" : "ENTY_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 16,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRIMARY_NM"
+            },
+            "name" : "PRIMARY_NM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 35,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9USXwyHkQlGgRlk1CpCrA2",
+          "connectionName" : "PS_Parth_Oracle_local",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "R39TEST",
+            "label" : "R39TEST",
+            "objectName" : "R39TEST",
+            "path" : "R39TEST",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ENTY_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ENTY_ID",
+                "nativeName" : "ENTY_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 16,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "R39TEST"
+                  }
+                ]
+              },
+              {
+                "name" : "PRIMARY_NM",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRIMARY_NM",
+                "nativeName" : "PRIMARY_NM",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 35,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "R39TEST"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "ENTY_ID",
+              "toField" : {
+                "name" : "ENTY_ID"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PRIMARY_NM",
+              "toField" : {
+                "name" : "PRIMARY_NM"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:53 EDT"
+}

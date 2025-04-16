@@ -1,0 +1,492 @@
+{
+  "name" : "SyncTask_FileProcessor_DecompressFile",
+  "maxLogs" : 10,
+  "sourceConnectionId" : "@0FFH8ubMw8yhP0Auee28AA",
+  "sourceConnectionName" : "FileProcessor_SFTPGET",
+  "targetConnectionId" : "@0a0kPIkOhhigDvVU4xcFCU",
+  "targetConnectionName" : "flatfiledemo",
+  "sourceObjects" : [
+    {
+      "name" : "FileDeCompress",
+      "label" : "FileDeCompress",
+      "metadataUpdated" : false
+    }
+  ],
+  "targetObject" : "FileDeCompress.csv",
+  "operation" : "Insert",
+  "maxRows" : 0,
+  "truncateTarget" : false,
+  "bulkApiDBTarget" : false,
+  "verbose" : false,
+  "tgtFlatFileAttrs" : {
+    "delimiter" : ",",
+    "textQualifier" : "\"",
+    "headerLineNo" : 1,
+    "firstDataRow" : 2,
+    "rowDelimiter" : 0,
+    "consecutiveDelimiter" : false,
+    "multiDelimitersAsAnd" : true,
+    "firstDataRowAsHeader" : false
+  },
+  "targetMetadataUpdated" : false,
+  "queryAll" : false,
+  "srcSettings" : {
+    "showLabels" : true,
+    "naturalOrder" : true
+  },
+  "tgtSettings" : {
+    "showLabels" : false,
+    "naturalOrder" : true
+  },
+  "cfSettings" : {
+    "showLabels" : false,
+    "naturalOrder" : false
+  },
+  "bulkApi" : false,
+  "bulkApiSerialMode" : false,
+  "bulkApiMonitor" : false,
+  "isTargetObjectSfCustom" : false,
+  "filters" : [
+    {
+      "objectName" : "FileDeCompress",
+      "objectLabel" : "FileDeCompress",
+      "field" : "FileName",
+      "fieldLabel" : "FileName",
+      "type" : "STRING",
+      "operator" : "equals",
+      "value" : "test1.zip"
+    },
+    {
+      "objectName" : "FileDeCompress",
+      "objectLabel" : "FileDeCompress",
+      "field" : "DeCompression_Type",
+      "type" : "STRING",
+      "operator" : "equals",
+      "value" : "zip"
+    }
+  ],
+  "fieldMaps" : [
+    {
+      "targetField" : {
+        "name" : "SourceFileDir",
+        "type" : "nstring",
+        "uniqueName" : "SourceFileDir",
+        "label" : "SourceFileDir",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "UNISTRING",
+        "precision" : 256,
+        "scale" : 0,
+        "columnIndex" : 0,
+        "filterType" : "STRING",
+        "linkedFields" : [
+          "SourceFileDir"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "SourceFileDir"
+    },
+    {
+      "targetField" : {
+        "name" : "DestFileDir",
+        "type" : "nstring",
+        "uniqueName" : "DestFileDir",
+        "label" : "DestFileDir",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "UNISTRING",
+        "precision" : 256,
+        "scale" : 0,
+        "columnIndex" : 1,
+        "filterType" : "STRING",
+        "linkedFields" : [
+          "DestFileDir"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "DestFileDir"
+    },
+    {
+      "targetField" : {
+        "name" : "PatternFlag",
+        "type" : "int",
+        "uniqueName" : "PatternFlag",
+        "label" : "PatternFlag",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "INT",
+        "precision" : 10,
+        "scale" : 0,
+        "columnIndex" : 2,
+        "filterType" : "INT",
+        "linkedFields" : [
+          "PatternFlag"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "PatternFlag"
+    },
+    {
+      "targetField" : {
+        "name" : "FileName",
+        "type" : "nstring",
+        "uniqueName" : "FileName",
+        "label" : "FileName",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "UNISTRING",
+        "precision" : 256,
+        "scale" : 0,
+        "columnIndex" : 3,
+        "filterType" : "STRING",
+        "linkedFields" : [
+          "FileName"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "FileName"
+    },
+    {
+      "targetField" : {
+        "name" : "DeCompression_Status",
+        "type" : "int",
+        "uniqueName" : "DeCompression_Status",
+        "label" : "DeCompression_Status",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "INT",
+        "precision" : 10,
+        "scale" : 0,
+        "columnIndex" : 4,
+        "filterType" : "INT",
+        "linkedFields" : [
+          "DeCompression_Status"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "DeCompression_Status"
+    },
+    {
+      "targetField" : {
+        "name" : "DeCompression_Type",
+        "type" : "nstring",
+        "uniqueName" : "DeCompression_Type",
+        "label" : "DeCompression_Type",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "UNISTRING",
+        "precision" : 256,
+        "scale" : 0,
+        "columnIndex" : 5,
+        "filterType" : "STRING",
+        "linkedFields" : [
+          "DeCompression_Type"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "DeCompression_Type"
+    },
+    {
+      "targetField" : {
+        "name" : "LastModDate",
+        "type" : "datetime",
+        "uniqueName" : "LastModDate",
+        "label" : "LastModDate",
+        "parentObject" : "FileDeCompress.csv",
+        "pcType" : "DATE",
+        "precision" : 19,
+        "scale" : 0,
+        "columnIndex" : 6,
+        "filterType" : "DATETIME",
+        "linkedFields" : [
+          "LastModDate"
+        ],
+        "showLabel" : false,
+        "naturalOrder" : 0,
+        "key" : false,
+        "nullable" : true,
+        "createable" : false,
+        "externalId" : false,
+        "waterMarkKey" : false,
+        "calculated" : false,
+        "updateable" : true,
+        "unique" : false,
+        "sfIdLookup" : false,
+        "filterable" : true
+      },
+      "expression" : "LastModDate"
+    }
+  ],
+  "sourceFields" : [
+    {
+      "name" : "SourceFileDir",
+      "type" : "string",
+      "uniqueName" : "SourceFileDir",
+      "label" : "SourceFileDir",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "NSTRING",
+      "precision" : 256,
+      "scale" : 256,
+      "columnIndex" : -1,
+      "filterType" : "STRING",
+      "linkedFields" : [
+        "SourceFileDir"
+      ],
+      "javaType" : "java.lang.String",
+      "showLabel" : true,
+      "naturalOrder" : 0,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : false
+    },
+    {
+      "name" : "DestFileDir",
+      "type" : "string",
+      "uniqueName" : "DestFileDir",
+      "label" : "DestFileDir",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "NSTRING",
+      "precision" : 256,
+      "scale" : 256,
+      "columnIndex" : -1,
+      "filterType" : "STRING",
+      "linkedFields" : [
+        "DestFileDir"
+      ],
+      "javaType" : "java.lang.String",
+      "showLabel" : true,
+      "naturalOrder" : 1,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : false
+    },
+    {
+      "name" : "PatternFlag",
+      "type" : "boolean",
+      "uniqueName" : "PatternFlag",
+      "label" : "PatternFlag",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "SMALL_INTEGER",
+      "precision" : 10,
+      "scale" : 10,
+      "columnIndex" : -1,
+      "filterType" : "INT",
+      "linkedFields" : [
+        "PatternFlag"
+      ],
+      "javaType" : "java.lang.Boolean",
+      "showLabel" : true,
+      "naturalOrder" : 2,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : false
+    },
+    {
+      "name" : "FileName",
+      "type" : "string",
+      "uniqueName" : "FileName",
+      "label" : "FileName",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "NSTRING",
+      "precision" : 256,
+      "scale" : 256,
+      "columnIndex" : -1,
+      "filterType" : "STRING",
+      "linkedFields" : [
+        "FileName"
+      ],
+      "javaType" : "java.lang.String",
+      "showLabel" : true,
+      "naturalOrder" : 3,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : true
+    },
+    {
+      "name" : "DeCompression_Status",
+      "type" : "boolean",
+      "uniqueName" : "DeCompression_Status",
+      "label" : "DeCompression_Status",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "SMALL_INTEGER",
+      "precision" : 10,
+      "scale" : 10,
+      "columnIndex" : -1,
+      "filterType" : "INT",
+      "linkedFields" : [
+        "DeCompression_Status"
+      ],
+      "javaType" : "java.lang.Boolean",
+      "showLabel" : true,
+      "naturalOrder" : 4,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : false
+    },
+    {
+      "name" : "DeCompression_Type",
+      "type" : "string",
+      "uniqueName" : "DeCompression_Type",
+      "label" : "DeCompression_Type",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "NSTRING",
+      "precision" : 256,
+      "scale" : 256,
+      "columnIndex" : -1,
+      "filterType" : "STRING",
+      "linkedFields" : [
+        "DeCompression_Type"
+      ],
+      "javaType" : "java.lang.String",
+      "showLabel" : true,
+      "naturalOrder" : 5,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : true
+    },
+    {
+      "name" : "LastModDate",
+      "type" : "datetime",
+      "uniqueName" : "LastModDate",
+      "label" : "LastModDate",
+      "parentObject" : "FileDeCompress",
+      "pcType" : "TOOLKIT_DATETIME",
+      "precision" : 26,
+      "scale" : 26,
+      "columnIndex" : -1,
+      "filterType" : "TOOLKIT_DATETIME",
+      "linkedFields" : [
+        "LastModDate"
+      ],
+      "javaType" : "java.sql.Timestamp",
+      "showLabel" : true,
+      "naturalOrder" : 6,
+      "key" : false,
+      "nullable" : true,
+      "createable" : false,
+      "externalId" : false,
+      "waterMarkKey" : false,
+      "calculated" : false,
+      "updateable" : true,
+      "unique" : false,
+      "sfIdLookup" : false,
+      "filterable" : true
+    }
+  ],
+  "allowNullUpdates" : false,
+  "targetBatchSize" : 200,
+  "assignmentRuleId" : "-1",
+  "assignmentRuleType" : "None",
+  "createSuccessFile" : false,
+  "bulkApiHardDelete" : false,
+  "srcRuntimeAttrs" : {
+    "attrs" : {
+      "Retry Count" : "3"
+    }
+  },
+  "tgtRuntimeAttrs" : { },
+  "parameterFileEncoding" : "UTF-8",
+  "vcsExportTime" : "2025-04-16 14:20:52 EDT"
+}

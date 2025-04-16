@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.682Z",
+  "updateTime" : "2025-04-16T18:21:01.955Z",
   "objectRefs" : [ {
     "id" : "7uUuhuO8x4Xf4ijkSnY0MD",
     "name" : "PS_Parth_Hierarchical Schema_Emp",
@@ -67,5 +67,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

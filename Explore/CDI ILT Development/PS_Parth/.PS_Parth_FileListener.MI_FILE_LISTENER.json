@@ -20,7 +20,7 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2023-09-11T18:46:56.672Z",
+  "updateTime" : "2025-04-16T18:21:01.940Z",
   "objectRefs" : [ {
     "id" : "8KunkggLxl9dikHa8cZpe1",
     "name" : "CDI_PS_Parth",
@@ -41,5 +41,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }

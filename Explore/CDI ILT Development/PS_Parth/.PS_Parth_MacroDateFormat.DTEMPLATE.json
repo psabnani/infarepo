@@ -23,6 +23,8 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.693Z",
-  "objectRefs" : [ ]
+  "updateTime" : "2025-04-16T18:21:01.968Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }

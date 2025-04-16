@@ -26,7 +26,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.684Z",
+  "updateTime" : "2025-04-16T18:21:01.957Z",
   "objectRefs" : [ {
     "id" : "33rub2p7B0Zjgk9mIAG2iE",
     "name" : "Repro_Test_Malli",
@@ -47,5 +47,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }

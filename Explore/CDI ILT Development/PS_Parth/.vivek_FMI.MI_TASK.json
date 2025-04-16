@@ -20,10 +20,10 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2023-09-11T18:46:56.675Z",
+  "updateTime" : "2025-04-16T18:21:01.944Z",
   "objectRefs" : [ {
     "id" : "9ZQm7G2ZvWvbh3zMXRgLsk",
-    "name" : "parthvm",
+    "name" : "PS_WindowsVM",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -41,5 +41,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }

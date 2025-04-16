@@ -1,0 +1,1064 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "PS_Parth_NormalizeAggregatormapp",
+    "links" : [
+      {
+        "link" : "SO_Sales -> Normalizer"
+      },
+      {
+        "link" : "NormalizerExpression -> Normalizer_Output"
+      },
+      {
+        "link" : "Normalizer -> Aggregator"
+      },
+      {
+        "link" : "Normalizer -> NormalizerExpression"
+      },
+      {
+        "link" : "Rank -> NormalizedAggregated_Output"
+      },
+      {
+        "link" : "Aggregator -> Rank"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-03-30T17:00:48.514Z",
+        "name" : "SO_Sales",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Emp_ID"
+            },
+            "name" : "Emp_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Emp_Name"
+            },
+            "name" : "Emp_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Qtr1"
+            },
+            "name" : "Qtr1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Qtr2"
+            },
+            "name" : "Qtr2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Qtr3"
+            },
+            "name" : "Qtr3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Qtr4"
+            },
+            "name" : "Qtr4",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "Sales.csv",
+            "label" : "Sales.csv",
+            "objectName" : "Sales.csv",
+            "path" : "Sales.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Emp_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "Emp_ID",
+                "nativeName" : "Emp_ID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Sales.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Emp_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Emp_Name",
+                "nativeName" : "Emp_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Sales.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Qtr1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Qtr1",
+                "nativeName" : "Qtr1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Sales.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Qtr2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Qtr2",
+                "nativeName" : "Qtr2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Sales.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Qtr3",
+                "fieldType" : "CONNECTOR",
+                "label" : "Qtr3",
+                "nativeName" : "Qtr3",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Sales.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Qtr4",
+                "fieldType" : "CONNECTOR",
+                "label" : "Qtr4",
+                "nativeName" : "Qtr4",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Sales.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-03-30T17:00:48.516Z",
+        "name" : "Normalizer_Output",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "Emp_ID"
+                  },
+                  {
+                    "inputName" : "Emp_Name"
+                  },
+                  {
+                    "inputName" : "Quarter"
+                  },
+                  {
+                    "inputName" : "QuarterSales"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Emp_ID"
+            },
+            "name" : "Emp_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Emp_Name"
+            },
+            "name" : "Emp_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Quarter"
+            },
+            "name" : "Quarter",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Sales"
+            },
+            "name" : "Sales",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Normalizer.csv",
+            "label" : "Normalizer.csv",
+            "objectName" : "Normalizer.csv",
+            "path" : "Normalizer.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Emp_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "Emp_ID",
+                "nativeName" : "Emp_ID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Normalizer.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Emp_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Emp_Name",
+                "nativeName" : "Emp_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Normalizer.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Quarter",
+                "fieldType" : "CONNECTOR",
+                "label" : "Quarter",
+                "nativeName" : "Quarter",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Normalizer.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Sales",
+                "fieldType" : "CONNECTOR",
+                "label" : "Sales",
+                "nativeName" : "Sales",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Normalizer.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Emp_ID",
+              "toField" : {
+                "name" : "Emp_ID"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Emp_Name",
+              "toField" : {
+                "name" : "Emp_Name"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Quarter",
+              "toField" : {
+                "name" : "Sales"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "QuarterSales",
+              "toField" : {
+                "name" : "Quarter"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2022-03-30T17:07:52.638Z",
+        "name" : "Normalizer",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createGKField" : "true",
+        "fieldMappingMode" : "MANUAL",
+        "fieldsMode" : "NOT_PARAMETERIZED",
+        "inputFields" : [
+          {
+            "name" : "Emp_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "Emp_ID"
+            }
+          },
+          {
+            "name" : "Emp_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "Emp_Name"
+            }
+          },
+          {
+            "name" : "Quarter_1",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 200,
+            "scale" : 0,
+            "occurrence" : 1,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          },
+          {
+            "name" : "Quarter_2",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 200,
+            "scale" : 0,
+            "occurrence" : 2,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          },
+          {
+            "name" : "Quarter_3",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 200,
+            "scale" : 0,
+            "occurrence" : 3,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          },
+          {
+            "name" : "Quarter_4",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 200,
+            "scale" : 0,
+            "occurrence" : 4,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          }
+        ],
+        "outputFields" : [
+          {
+            "name" : "Emp_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Emp_ID"
+            }
+          },
+          {
+            "name" : "Emp_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Emp_Name"
+            }
+          },
+          {
+            "name" : "Quarter",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 200,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          },
+          {
+            "name" : "GCID_Quarter",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          },
+          {
+            "name" : "GK_Quarter",
+            "platformType" : {
+              "name" : "bigint"
+            },
+            "precision" : 19,
+            "scale" : 0,
+            "occurrence" : 0,
+            "referenceField" : {
+              "name" : "Quarter"
+            }
+          }
+        ],
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Qtr1",
+              "toField" : {
+                "name" : "Quarter_1"
+              }
+            },
+            {
+              "fromFieldName" : "Emp_ID",
+              "toField" : {
+                "name" : "Emp_ID"
+              }
+            },
+            {
+              "fromFieldName" : "Emp_Name",
+              "toField" : {
+                "name" : "Emp_Name"
+              }
+            },
+            {
+              "fromFieldName" : "Qtr2",
+              "toField" : {
+                "name" : "Quarter_2"
+              }
+            },
+            {
+              "fromFieldName" : "Qtr3",
+              "toField" : {
+                "name" : "Quarter_3"
+              }
+            },
+            {
+              "fromFieldName" : "Qtr4",
+              "toField" : {
+                "name" : "Quarter_4"
+              }
+            }
+          ]
+        },
+        "normalizerFields" : {
+          "fieldList" : [
+            {
+              "name" : "Emp_ID",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0,
+              "occurs" : 1
+            },
+            {
+              "name" : "Emp_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0,
+              "occurs" : 1
+            },
+            {
+              "name" : "Quarter",
+              "platformType" : {
+                "name" : "decimal"
+              },
+              "precision" : 200,
+              "scale" : 0,
+              "occurs" : 4
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2022-03-30T17:18:42.059Z",
+        "name" : "NormalizerExpression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "name" : "QuarterSales",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "DECODE(TRUE, GCID_Quarter=1, 'Qtr1', GCID_Quarter=2, 'Qtr2', GCID_Quarter=3, \n'Qtr3', GCID_Quarter=4, 'Qtr4')"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "createTime" : "2022-03-30T17:46:14.452Z",
+        "name" : "Aggregator",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "fields" : [
+          {
+            "name" : "Percentage",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "(SUM(Quarter) /400)*100"
+          }
+        ],
+        "groupByFieldsList" : {
+          "fields" : [
+            {
+              "fieldName" : "Emp_ID"
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2022-03-30T17:53:46.713Z",
+        "name" : "NormalizedAggregated_Output",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "Emp_ID"
+                  },
+                  {
+                    "inputName" : "Emp_Name"
+                  },
+                  {
+                    "inputName" : "Percentage"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Emp_ID"
+            },
+            "name" : "Emp_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Name"
+            },
+            "name" : "Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Percentage"
+            },
+            "name" : "Percentage",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Aggregated.csv",
+            "label" : "Aggregated.csv",
+            "objectName" : "Aggregated.csv",
+            "path" : "Aggregated.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Emp_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "Emp_ID",
+                "nativeName" : "Emp_ID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Aggregated.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Name",
+                "nativeName" : "Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Aggregated.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Percentage",
+                "fieldType" : "CONNECTOR",
+                "label" : "Percentage",
+                "nativeName" : "Percentage",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Aggregated.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "Emp_ID",
+              "toField" : {
+                "name" : "Emp_ID"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Emp_Name",
+              "toField" : {
+                "name" : "Name"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "Percentage",
+              "toField" : {
+                "name" : "Percentage"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2022-03-30T17:54:52.572Z",
+        "name" : "Rank",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "numOfRows" : 20,
+        "rankField" : "Percentage",
+        "isTop" : "true"
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:57 EDT"
+}

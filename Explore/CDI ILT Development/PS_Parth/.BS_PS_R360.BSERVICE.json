@@ -26,7 +26,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-11T18:46:56.689Z",
+  "updateTime" : "2025-04-16T18:21:01.964Z",
   "objectRefs" : [ {
     "id" : "3opmjcWkZ2sg8qSB7wSGIQ",
     "name" : "RESTV2_PS_R360",
@@ -47,5 +47,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }

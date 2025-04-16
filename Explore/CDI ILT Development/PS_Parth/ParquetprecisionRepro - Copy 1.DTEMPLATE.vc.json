@@ -1,0 +1,491 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "ParquetprecisionRepro - Copy 1",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "SourceConn"
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "SourceObj"
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "TargetConn"
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "Mappobj",
+        "anonymousType" : {
+          "allowPartialOverride" : "false"
+        }
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2022-08-18T15:41:06.896Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ENTERPRISE"
+            },
+            "name" : "ENTERPRISE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ENTERPRISEID"
+            },
+            "name" : "ENTERPRISEID",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ERLIST"
+            },
+            "name" : "ERLIST",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SOURCE_SCHEMA"
+            },
+            "name" : "SOURCE_SCHEMA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FileName"
+            },
+            "name" : "FileName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1024,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@8oA9n1UhELKeRCxcTXQDSS",
+          "connectionName" : "PS_AWS_S3",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "dataFormat" : {
+            "formatId" : "Parquet",
+            "validateHSchema" : "false"
+          },
+          "object" : {
+            "name" : "iam.qa.bucket/PS%2F/rpt_enterprisesforslas_20220616074318905.parquet",
+            "label" : "rpt_enterprisesforslas_20220616074318905.parquet",
+            "objectName" : "rpt_enterprisesforslas_20220616074318905.parquet",
+            "objectType" : "amazons3",
+            "path" : "iam.qa.bucket/PS%2F/rpt_enterprisesforslas_20220616074318905.parquet",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "FileName",
+                "fieldType" : "CONNECTOR",
+                "label" : "FileName",
+                "nativeName" : "FileName",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 1024,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "partitionOrder",
+                    "value" : "0"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "rpt_enterprisesforslas_20220616074318905.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ENTERPRISE",
+                "fieldType" : "PARSER",
+                "label" : "ENTERPRISE",
+                "nativeName" : "ENTERPRISE",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "rpt_enterprisesforslas_20220616074318905.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ENTERPRISEID",
+                "fieldType" : "PARSER",
+                "label" : "ENTERPRISEID",
+                "nativeName" : "ENTERPRISEID",
+                "nativeType" : "parquet_int32",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "rpt_enterprisesforslas_20220616074318905.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ERLIST",
+                "fieldType" : "PARSER",
+                "label" : "ERLIST",
+                "nativeName" : "ERLIST",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 40000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "rpt_enterprisesforslas_20220616074318905.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "SOURCE_SCHEMA",
+                "fieldType" : "PARSER",
+                "label" : "SOURCE_SCHEMA",
+                "nativeName" : "SOURCE_SCHEMA",
+                "nativeType" : "parquet_string",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "rpt_enterprisesforslas_20220616074318905.parquet"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2022-08-18T15:41:06.896Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "requestXmlSize",
+            "value" : "1024"
+          },
+          {
+            "name" : "Transformation Scope",
+            "value" : "All Input"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "PARAMETERIZED",
+        "inputSorted" : "false",
+        "manualMappings$" : {
+          "name" : "Mappobj"
+        },
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ENTERPRISE"
+            },
+            "name" : "ENTERPRISE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ENTERPRISEID"
+            },
+            "name" : "ENTERPRISEID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ERLIST"
+            },
+            "name" : "ERLIST",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SOURCE_SCHEMA"
+            },
+            "name" : "SOURCE_SCHEMA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FileName"
+            },
+            "name" : "FileName",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Parquetfile.parquet",
+            "label" : "Parquetfile.parquet",
+            "objectName" : "Parquetfile.parquet",
+            "path" : "Parquetfile.parquet",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ENTERPRISE",
+                "fieldType" : "CONNECTOR",
+                "label" : "ENTERPRISE",
+                "nativeName" : "ENTERPRISE",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Parquetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ENTERPRISEID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ENTERPRISEID",
+                "nativeName" : "ENTERPRISEID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Parquetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "ERLIST",
+                "fieldType" : "CONNECTOR",
+                "label" : "ERLIST",
+                "nativeName" : "ERLIST",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 40000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Parquetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "SOURCE_SCHEMA",
+                "fieldType" : "CONNECTOR",
+                "label" : "SOURCE_SCHEMA",
+                "nativeName" : "SOURCE_SCHEMA",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Parquetfile.parquet"
+                  }
+                ]
+              },
+              {
+                "name" : "FileName",
+                "fieldType" : "CONNECTOR",
+                "label" : "FileName",
+                "nativeName" : "FileName",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Parquetfile.parquet"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-16 14:20:52 EDT"
+}
