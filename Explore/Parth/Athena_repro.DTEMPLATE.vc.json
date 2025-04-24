@@ -1,0 +1,1004 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Athena_repro",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2023-05-04T21:09:44.719Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "msg_received_date"
+            },
+            "name" : "msg_received_date",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "hl7_version_num"
+            },
+            "name" : "hl7_version_num",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "mem_num"
+            },
+            "name" : "mem_num",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "patientidentifierlist41"
+            },
+            "name" : "patientidentifierlist41",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "first_name"
+            },
+            "name" : "first_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "last_name"
+            },
+            "name" : "last_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dob"
+            },
+            "name" : "dob",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "gender"
+            },
+            "name" : "gender",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "street"
+            },
+            "name" : "street",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "city"
+            },
+            "name" : "city",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "state"
+            },
+            "name" : "state",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "zipcode"
+            },
+            "name" : "zipcode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "patienthomephone"
+            },
+            "name" : "patienthomephone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "email_recipient"
+            },
+            "name" : "email_recipient",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "race_description"
+            },
+            "name" : "race_description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ethinic_description"
+            },
+            "name" : "ethinic_description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "administrationsub_idcounter"
+            },
+            "name" : "administrationsub_idcounter",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "datetimestartofadministration"
+            },
+            "name" : "datetimestartofadministration",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "admin_description"
+            },
+            "name" : "admin_description",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "administeredamount"
+            },
+            "name" : "administeredamount",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "administeredunits"
+            },
+            "name" : "administeredunits",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "admin_provider_fullname"
+            },
+            "name" : "admin_provider_fullname",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "admin_location"
+            },
+            "name" : "admin_location",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "subs_lot_number"
+            },
+            "name" : "subs_lot_number",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "subs_exp_date"
+            },
+            "name" : "subs_exp_date",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "subs_manf_name"
+            },
+            "name" : "subs_manf_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "completionstatus"
+            },
+            "name" : "completionstatus",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "applicationerrorcode"
+            },
+            "name" : "applicationerrorcode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "load_dt"
+            },
+            "name" : "load_dt",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "process_yyyymmdd"
+            },
+            "name" : "process_yyyymmdd",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@2y5rEFCkgIjcKBhUcBPwKr",
+          "connectionName" : "PS_AWS_Athena",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "AwsDataCatalog/sampledb/bcbsma_data01",
+            "label" : "bcbsma_data01",
+            "objectName" : "bcbsma_data01",
+            "objectType" : "amazonathena",
+            "path" : "AwsDataCatalog/sampledb/bcbsma_data01",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "msg_received_date",
+                "fieldType" : "CONNECTOR",
+                "label" : "msg_received_date",
+                "nativeName" : "msg_received_date",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "hl7_version_num",
+                "fieldType" : "CONNECTOR",
+                "label" : "hl7_version_num",
+                "nativeName" : "hl7_version_num",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "mem_num",
+                "fieldType" : "CONNECTOR",
+                "label" : "mem_num",
+                "nativeName" : "mem_num",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "patientidentifierlist41",
+                "fieldType" : "CONNECTOR",
+                "label" : "patientidentifierlist41",
+                "nativeName" : "patientidentifierlist41",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "first_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "first_name",
+                "nativeName" : "first_name",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "last_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "last_name",
+                "nativeName" : "last_name",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "dob",
+                "fieldType" : "CONNECTOR",
+                "label" : "dob",
+                "nativeName" : "dob",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "gender",
+                "fieldType" : "CONNECTOR",
+                "label" : "gender",
+                "nativeName" : "gender",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "street",
+                "fieldType" : "CONNECTOR",
+                "label" : "street",
+                "nativeName" : "street",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "city",
+                "fieldType" : "CONNECTOR",
+                "label" : "city",
+                "nativeName" : "city",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "state",
+                "fieldType" : "CONNECTOR",
+                "label" : "state",
+                "nativeName" : "state",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "zipcode",
+                "fieldType" : "CONNECTOR",
+                "label" : "zipcode",
+                "nativeName" : "zipcode",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "patienthomephone",
+                "fieldType" : "CONNECTOR",
+                "label" : "patienthomephone",
+                "nativeName" : "patienthomephone",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "email_recipient",
+                "fieldType" : "CONNECTOR",
+                "label" : "email_recipient",
+                "nativeName" : "email_recipient",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "race_description",
+                "fieldType" : "CONNECTOR",
+                "label" : "race_description",
+                "nativeName" : "race_description",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "ethinic_description",
+                "fieldType" : "CONNECTOR",
+                "label" : "ethinic_description",
+                "nativeName" : "ethinic_description",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "administrationsub_idcounter",
+                "fieldType" : "CONNECTOR",
+                "label" : "administrationsub_idcounter",
+                "nativeName" : "administrationsub_idcounter",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "datetimestartofadministration",
+                "fieldType" : "CONNECTOR",
+                "label" : "datetimestartofadministration",
+                "nativeName" : "datetimestartofadministration",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "admin_description",
+                "fieldType" : "CONNECTOR",
+                "label" : "admin_description",
+                "nativeName" : "admin_description",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "administeredamount",
+                "fieldType" : "CONNECTOR",
+                "label" : "administeredamount",
+                "nativeName" : "administeredamount",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "administeredunits",
+                "fieldType" : "CONNECTOR",
+                "label" : "administeredunits",
+                "nativeName" : "administeredunits",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "admin_provider_fullname",
+                "fieldType" : "CONNECTOR",
+                "label" : "admin_provider_fullname",
+                "nativeName" : "admin_provider_fullname",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "admin_location",
+                "fieldType" : "CONNECTOR",
+                "label" : "admin_location",
+                "nativeName" : "admin_location",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "subs_lot_number",
+                "fieldType" : "CONNECTOR",
+                "label" : "subs_lot_number",
+                "nativeName" : "subs_lot_number",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "subs_exp_date",
+                "fieldType" : "CONNECTOR",
+                "label" : "subs_exp_date",
+                "nativeName" : "subs_exp_date",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "subs_manf_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "subs_manf_name",
+                "nativeName" : "subs_manf_name",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "completionstatus",
+                "fieldType" : "CONNECTOR",
+                "label" : "completionstatus",
+                "nativeName" : "completionstatus",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "applicationerrorcode",
+                "fieldType" : "CONNECTOR",
+                "label" : "applicationerrorcode",
+                "nativeName" : "applicationerrorcode",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "load_dt",
+                "fieldType" : "CONNECTOR",
+                "label" : "load_dt",
+                "nativeName" : "load_dt",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              },
+              {
+                "name" : "process_yyyymmdd",
+                "fieldType" : "CONNECTOR",
+                "label" : "process_yyyymmdd",
+                "nativeName" : "process_yyyymmdd",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "bcbsma_data01"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "recordType",
+                "value" : "EXTERNAL_TABLE"
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          },
+          "runtimeAttributes" : {
+            "attributes" : [
+              {
+                "name" : "Retain Athena Query Result On S3 File",
+                "value" : "YES"
+              },
+              {
+                "name" : "Fetch Size",
+                "value" : "10000"
+              },
+              {
+                "name" : "Encryption Type",
+                "value" : "None"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "createTime" : "2023-05-04T21:09:44.719Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Create Target Directory",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@0a0kPIkOhhigDvVU4xcFCU",
+          "connectionName" : "flatfiledemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "athena.txt",
+            "label" : "athena.txt",
+            "path" : "athena.txt",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-24 11:51:39 EDT"
+}

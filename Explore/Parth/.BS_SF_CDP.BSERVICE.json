@@ -26,7 +26,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-18T21:37:34.883Z",
+  "updateTime" : "2025-04-24T15:51:40.030Z",
   "objectRefs" : [ {
     "id" : "3cPLLyJj9T1jg4B4UPsPq6",
     "name" : "SF_CDP_Restv2",
@@ -47,5 +47,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }

@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-18T21:38:57.209Z",
+  "updateTime" : "2025-04-24T15:51:40.030Z",
   "objectRefs" : [ {
     "id" : "0a0kPIkOhhigDvVU4xcFCU",
     "name" : "flatfiledemo",
@@ -64,5 +64,7 @@
       }
     },
     "path" : "/SYS"
-  } ]
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
 }
