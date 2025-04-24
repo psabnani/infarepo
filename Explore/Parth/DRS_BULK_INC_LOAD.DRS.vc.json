@@ -1,0 +1,32 @@
+{
+  "name" : "DRS_BULK_INC_LOAD",
+  "maxLogs" : 10,
+  "sourceConnectionId" : "@g4woOy7Ss2OhjMhqMkEHqj",
+  "sourceConnectionName" : "SS_Parth_SFDCDeveloper_2",
+  "targetConnectionId" : "@aA657J0CMickakyQXADckq",
+  "targetConnectionName" : "ss_db2loader",
+  "tablePrefix" : "SF_LATEST_",
+  "verbose" : true,
+  "fullRefresh" : false,
+  "replicateAllObjects" : false,
+  "removeDeleted" : true,
+  "queryAll" : false,
+  "srcShowLabels" : true,
+  "maxRows" : 0,
+  "stopOnError" : true,
+  "replicationObjects" : [
+    "Account"
+  ],
+  "metadataMode" : 0,
+  "bulkApi" : false,
+  "base64BodySize" : 0.0,
+  "bulkApiDBTarget" : true,
+  "srcRuntimeAttrs" : {
+    "attrs" : {
+      "Maximum Rows Per Request" : "0",
+      "PK Chunking size" : "100000",
+      "Enable PK Chunking" : "0"
+    }
+  },
+  "vcsExportTime" : "2025-04-24 11:54:44 EDT"
+}
